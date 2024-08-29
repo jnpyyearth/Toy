@@ -12,6 +12,8 @@ import { LogInComponent } from './log-in/log-in.component';
 import { CartComponent } from './cart/cart.component';
 import { AccountComponent } from './account/account.component';
 import { LogOutComponent } from './log-out/log-out.component';
+import { TestComponent } from './test/test.component';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { LogOutComponent } from './log-out/log-out.component';
     LogInComponent,
     CartComponent,
     AccountComponent,
-    LogOutComponent
+    LogOutComponent,
+    TestComponent,
+  
   ],
   imports: [
     BrowserModule,
