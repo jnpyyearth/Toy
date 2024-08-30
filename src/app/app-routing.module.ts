@@ -8,6 +8,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { CartComponent } from './cart/cart.component';
 import { AccountComponent } from './account/account.component';
 import { LogOutComponent } from './log-out/log-out.component';
+import { LogInComponent } from './log-in/log-in.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' }, 
@@ -18,7 +19,8 @@ const routes: Routes = [
   { path: 'contact-us', component: ContactUsComponent},
   { path: 'cart', component: CartComponent},
   { path : 'account', component: AccountComponent},
-  { path : 'log-out', component: LogOutComponent}
+  { path : 'log-out', component: LogOutComponent},
+  { path : 'log-in', component: LogInComponent},
 ];
 
 @NgModule({
