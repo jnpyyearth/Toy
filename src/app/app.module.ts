@@ -13,6 +13,8 @@ import { CartComponent } from './cart/cart.component';
 import { AccountComponent } from './account/account.component';
 import { LogOutComponent } from './log-out/log-out.component';
 import { Test1Component } from './test1/test1.component';
+import { SettingComponent } from './setting/setting.component';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { Test1Component } from './test1/test1.component';
     CartComponent,
     AccountComponent,
     LogOutComponent,
-    Test1Component
+    Test1Component,
+    SettingComponent
   ],
   imports: [
     BrowserModule,

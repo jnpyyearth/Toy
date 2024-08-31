@@ -9,6 +9,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { CartComponent } from './cart/cart.component';
 import { AccountComponent } from './account/account.component';
 import { LogOutComponent } from './log-out/log-out.component';
+import { SettingComponent } from './setting/setting.component';
 
 
 
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'cart', component: CartComponent},
   { path : 'account', component: AccountComponent},
   { path : 'log-out', component: LogOutComponent},
+  { path : 'setting', component: SettingComponent},
   
 ];
 
