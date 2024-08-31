@@ -13,6 +13,9 @@ import { AccountComponent } from './account/account.component';
 import { LogOutComponent } from './log-out/log-out.component';
 import { Test1Component } from './test1/test1.component';
 import { SettingComponent } from './setting/setting.component';
+import { BoardgameComponent } from './boardgame/boardgame.component';
+import { CardgameComponent } from './cardgame/cardgame.component';
+import { FigureModelComponent } from './figure-model/figure-model.component';
 
 
 @NgModule({
@@ -27,7 +30,10 @@ import { SettingComponent } from './setting/setting.component';
     AccountComponent,
     LogOutComponent,
     Test1Component,
-    SettingComponent
+    SettingComponent,
+    BoardgameComponent,
+    CardgameComponent,
+    FigureModelComponent
   ],
   imports: [
     BrowserModule,

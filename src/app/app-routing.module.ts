@@ -9,6 +9,9 @@ import { CartComponent } from './cart/cart.component';
 import { AccountComponent } from './account/account.component';
 import { LogOutComponent } from './log-out/log-out.component';
 import { SettingComponent } from './setting/setting.component';
+import { BoardgameComponent } from './boardgame/boardgame.component';
+import { CardgameComponent } from './cardgame/cardgame.component';
+import { FigureModelComponent } from './figure-model/figure-model.component';
 
 
 
@@ -23,6 +26,9 @@ const routes: Routes = [
   { path : 'account', component: AccountComponent},
   { path : 'log-out', component: LogOutComponent},
   { path : 'setting', component: SettingComponent},
+  { path : 'boardgame', component: BoardgameComponent},
+  { path : 'cardgame', component: CardgameComponent},
+  { path : 'figure-model', component: FigureModelComponent},
   
 ];
 

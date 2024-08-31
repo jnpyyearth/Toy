@@ -5,7 +5,7 @@
   }
 
   .navbar a:hover {
-    color: #010100;
+    color: greenyellow;
     text-shadow: 0 0 10px rgba(255, 215, 0, 1);
   }
 
@@ -15,6 +15,10 @@
   }
 
   .navbar b:hover {
-    color: #ff5500;
-    text-shadow: 0 0 10px rgba(255, 215, 0, 1);
+    color: rgb(255, 47, 127);
+    text-shadow: 0 0 10px rgb(202, 11, 177);
+  }
+
+  .nav-item{
+    font-size: 19px;
   }
