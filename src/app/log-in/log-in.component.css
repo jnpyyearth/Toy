@@ -23,23 +23,24 @@ body {
     color: rgb(255, 241, 243);
     border-radius: 60px;
     border: 5px solid greenyellow;
-    padding: 20px 30px;
-    animation: borderMove 800ms infinite; 
+    padding: 20px 30px; 
+    animation: borderBlink 1s infinite; 
     
 }
 
 
-@keyframes borderMove { 
-    0% {
-        border-width: 9px; /* ตั้งค่ากรอบ*/
+@keyframes borderBlink {
+    0%, 100% {
+        border-color: greenyellow; 
     }
     50% {
-        border-width: 15px; /* ทำให้กรอบขยายใหญ่ขึ้น */
+        border-color: transparent; 
     }
-    100% {
-        border-width: 9px; /* ทำให้กรอบหดกลับมาเท่าเดิม */
+    75% {
+        border-color: aliceblue;
     }
-} 
+}
+
 
 .loginbox h1{
     font-size: 36;

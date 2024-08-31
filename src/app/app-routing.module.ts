@@ -9,9 +9,11 @@ import { CartComponent } from './cart/cart.component';
 import { AccountComponent } from './account/account.component';
 import { LogOutComponent } from './log-out/log-out.component';
 import { LogInComponent } from './log-in/log-in.component';
+import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' }, 
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: 'app', component: AppComponent }, 
   { path: 'home', component: HomeComponent }, 
   { path: 'menu', component: MenuComponent },
   { path: 'about-us', component: AboutUsComponent},
