@@ -15,6 +15,8 @@ import { LogOutComponent } from './log-out/log-out.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, provideHttpClient } from '@angular/common/http';
 import { SignInComponent } from './sign-in/sign-in.component';
+import { RegisterComponent } from './register/register.component';
+// import { AuthService } from './auth/service';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { SignInComponent } from './sign-in/sign-in.component';
     CartComponent,
     AccountComponent,
     LogOutComponent,
-    SignInComponent
+    SignInComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,7 @@ import { SignInComponent } from './sign-in/sign-in.component';
     ReactiveFormsModule,
     
   ],
-  providers: [provideHttpClient()],
+  providers: [provideHttpClient(), provideClientHydration(), ],
   bootstrap: [AppComponent],
 })
 export class AppModule { }

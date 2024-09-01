@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+// import { AuthService } from '../auth/service'
+
 
 @Component({
   selector: 'app-log-in',
@@ -24,7 +26,7 @@ export class LogInComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    
+
   }
 
   onLogin() {
@@ -39,7 +41,7 @@ export class LogInComponent implements OnInit {
       password
     }).subscribe({
       next: (response) => {
-        // Store JWT token, role, and username
+        // Store info
         if (response.token) {
           localStorage.setItem('authToken', response.token);
           localStorage.setItem('role', response.role);
@@ -47,11 +49,21 @@ export class LogInComponent implements OnInit {
 
           console.log('response', response);
 
+          // Navigate based on role
           if (response.role === 'manager' || response.role === 'employee') {
-            this.router.navigate(['/about-us']);
-          } else {
-            this.router.navigate(['/home']); 
+            this.router.navigate(['/home']);
+          } 
+          else if(response.role === '') {
+            this.router.navigate(['/log-in']);
+            alert('Unauthorized role1');
           }
+          else {
+            this.router.navigate(['/log-in']);
+            alert('Unauthorized role2');
+          }
+          
+
+
         }
       },
       error: (error) => {

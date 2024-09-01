@@ -10,19 +10,24 @@ import { AccountComponent } from './account/account.component';
 import { LogOutComponent } from './log-out/log-out.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { AppComponent } from './app.component';
+// import { AuthGuard } from './auth/guard';
+// import { Role } from './auth/role';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
   { path: 'log-in', redirectTo: 'login', pathMatch: 'full' },
-  { path: 'app', component: AppComponent }, 
-  { path: 'home', component: HomeComponent }, 
+  { path: 'app', component: AppComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'menu', component: MenuComponent },
   { path: 'about-us', component: AboutUsComponent},
-  { path: 'inventory', component: InventoryComponent},
-  { path: 'contact-us', component: ContactUsComponent},
-  { path: 'cart', component: CartComponent},
-  { path : 'account', component: AccountComponent},
-  { path : 'log-out', component: LogOutComponent},
-  { path : 'log-in', component: LogInComponent},
+  { path: 'inventory', component: InventoryComponent },
+  { path: 'contact-us', component: ContactUsComponent },
+  { path: 'cart', component: CartComponent },
+  { path: 'account', component: AccountComponent },
+  { path: 'log-out', component: LogOutComponent },
+  { path: 'log-in', component: LogInComponent },
+  { path: 'register', component: RegisterComponent }, 
+  // { path: 'about-us', component: AboutUsComponent, canActivate: [AuthGuard], data: { roles: [Role.manager] } },
 ];
 
 @NgModule({
