@@ -33,37 +33,30 @@ export class LogInComponent implements OnInit {
     if (this.loginForm.invalid) {
       return;
     }
-
+  
     const { username, password } = this.loginForm.value;
-
+  
+    console.log('LoginForm values:', this.loginForm.value);
+  
     this.http.post<{ token: string, role: string, username: string }>('http://localhost:3001/api/login', {
       username,
       password
     }).subscribe({
       next: (response) => {
-        // Store info
+        console.log('API Response:', response);
+  
         if (response.token) {
           localStorage.setItem('authToken', response.token);
           localStorage.setItem('role', response.role);
           localStorage.setItem('username', response.username);
-
-          console.log('response', response);
-
+  
           // Navigate based on role
-          if (response.role === 'manager' || response.role === 'employee') {
+          if (response.role === 'manager' || response.role === 'employee' || response.role === 'user') {
             this.router.navigate(['/home']);
-          } 
-          else if(response.role === '') {
+          } else {
             this.router.navigate(['/log-in']);
-            alert('Unauthorized role1');
+            alert('Unauthorized role');
           }
-          else {
-            this.router.navigate(['/log-in']);
-            alert('Unauthorized role2');
-          }
-          
-
-
         }
       },
       error: (error) => {
@@ -72,4 +65,5 @@ export class LogInComponent implements OnInit {
       }
     });
   }
+  
 }

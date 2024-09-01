@@ -16,6 +16,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, provideHttpClient } from '@angular/common/http';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { RegisterComponent } from './register/register.component';
+import { UnauthorizedComponent } from './unauthorized/unauthorized.component';
 // import { AuthService } from './auth/service';
 
 @NgModule({
@@ -31,7 +32,8 @@ import { RegisterComponent } from './register/register.component';
     AccountComponent,
     LogOutComponent,
     SignInComponent,
-    RegisterComponent
+    RegisterComponent,
+    UnauthorizedComponent
   ],
   imports: [
     BrowserModule,
