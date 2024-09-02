@@ -1,8 +1,13 @@
 .navbar a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
-  }
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar a:hover {
+  color: rgb(255, 255, 255); 
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.5); 
+}
 
   .navbar a:hover {
     color: greenyellow;

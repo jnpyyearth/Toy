@@ -1,5 +1,22 @@
 h3{
     text-align: center;
-    color: gold;
+    color: rgb(167, 255, 3);
+}
+
+.card-img-top {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    object-position: center; 
+    margin: 0; 
+}
+
+.dropdown-item {
+    color: #1a0404; /* เปลี่ยนสีข้อความ */
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* สีพื้นหลังเมื่อ hover */
+    color: #ffcc00; /* เปลี่ยนสีข้อความเมื่อ hover */
 }
 

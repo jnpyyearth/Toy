@@ -12,11 +12,15 @@ import { SettingComponent } from './setting/setting.component';
 import { BoardgameComponent } from './boardgame/boardgame.component';
 import { CardgameComponent } from './cardgame/cardgame.component';
 import { FigureModelComponent } from './figure-model/figure-model.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { RegisterComponent } from './register/register.component';
+
+
 
 
 
 const routes: Routes = [
-  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: '', redirectTo: 'log-in', pathMatch: 'full' },
   { path : 'log-in', component: LogInComponent},
   { path: 'home', component: HomeComponent }, 
   { path: 'about-us', component: AboutUsComponent},
@@ -29,6 +33,9 @@ const routes: Routes = [
   { path : 'boardgame', component: BoardgameComponent},
   { path : 'cardgame', component: CardgameComponent},
   { path : 'figure-model', component: FigureModelComponent},
+  { path : 'navbar', component: NavbarComponent},
+  { path : 'register', component: RegisterComponent},
+  
   
 ];
 

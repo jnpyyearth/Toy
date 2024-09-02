@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';  // Add this import
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,7 +17,8 @@ import { SettingComponent } from './setting/setting.component';
 import { BoardgameComponent } from './boardgame/boardgame.component';
 import { CardgameComponent } from './cardgame/cardgame.component';
 import { FigureModelComponent } from './figure-model/figure-model.component';
-
+import { NavbarComponent } from './navbar/navbar.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -33,11 +35,14 @@ import { FigureModelComponent } from './figure-model/figure-model.component';
     SettingComponent,
     BoardgameComponent,
     CardgameComponent,
-    FigureModelComponent
+    FigureModelComponent,
+    NavbarComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule  // Add this to the imports array
   ],
   providers: [
     provideClientHydration()

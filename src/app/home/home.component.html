@@ -1,3 +1,68 @@
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(11, 18, 2); box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);">
+  <div class="container-fluid">
+    <img src="/asset/toy Papl.jpg" class="logo-img" alt="">
+    <a class="navbar-brand" href="#">ToyPaPlern</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/home"><i class="bi bi-house"></i> Home</a>
+        </li>
+        <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Toy-Catagory
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><b class="dropdown-item" href="#" routerLink= "/boardgame">Boardgame</b></li>
+                            <li><b class="dropdown-item" href="#" routerLink= "/cardgame">Cardgame</b></li>
+                            <li><b class="dropdown-item" href="#" routerLink= "/figure-model">Figure & Model</b></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about-us">About-us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact-us">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/cart"><i class="bi bi-basket-fill"></i> My-cart</a>
+        </li>
+      </ul>
+      <div class="dropdown ms-auto"> 
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="bi bi-person-circle"></i> Account
+        </button>
+        <ul class="dropdown-menu">
+          <li><b class="dropdown-item" href="#" routerLink="/log-in">Log-out</b></li>
+          <li><b class="dropdown-item" href="#" routerLink="/setting">seting</b></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  
+
+
+
+
+<!--class="navbar-toggler": กำหนดให้ปุ่มนี้เป็นปุ่มสำหรับเปิด/ปิดแถบเมนู -->
+<!--type="button": ระบุว่าปุ่มนี้เป็นปุ่มประเภท "button">
+<!-type="button": ระบุว่าปุ่มนี้เป็นปุ่มประเภท "button">
+<!-"button": ระบุว่าปุ่มนี้เป็นปุ่มประเภท "button">
+
+<!-tag directive-->
+<div class="container mt-4">
+  <router-outlet></router-outlet>
+</div>
+
+
 
 <h2> Welcome to Toyworld</h2>
 <div id="carouselExampleCaptions" class="carousel slide">
@@ -9,14 +74,14 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLbzIgBf2khYVE_WiJk7B85uI-TsGti4w2_g&s" class="d-block w-100" alt="...">
+        <img src="https://down-th.img.susercontent.com/file/f44499d50de3f6c117775874bb77e29c" class="d-block w-100" alt="...">
         <br/><br/> <div class="carousel-caption d-none d-md-block">
           <h5>Exploting kitten</h5>
           <p> ยอดฮิต!!!!</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="https://dt.lnwfile.com/_/dt/_resize/200/200/5i/wg/wa.jpg" class="d-block w-100" alt="...">
+        <img src="https://inwfile.com/s-dt/5iwgwa.jpg" class="d-block w-100" alt="...">
         <br/><br/><div class="carousel-caption d-none d-md-block">
           <h5>Virus</h5>
           <p>50</p>
