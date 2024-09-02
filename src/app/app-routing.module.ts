@@ -14,6 +14,7 @@ import { CardgameComponent } from './cardgame/cardgame.component';
 import { FigureModelComponent } from './figure-model/figure-model.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RegisterComponent } from './register/register.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 
@@ -35,6 +36,7 @@ const routes: Routes = [
   { path : 'figure-model', component: FigureModelComponent},
   { path : 'navbar', component: NavbarComponent},
   { path : 'register', component: RegisterComponent},
+  { path : 'sidebar', component: SidebarComponent},
   
   
 ];

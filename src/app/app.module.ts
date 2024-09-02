@@ -19,6 +19,7 @@ import { CardgameComponent } from './cardgame/cardgame.component';
 import { FigureModelComponent } from './figure-model/figure-model.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RegisterComponent } from './register/register.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { RegisterComponent } from './register/register.component';
     FigureModelComponent,
     NavbarComponent,
     RegisterComponent,
+    SidebarComponent,
   ],
   imports: [
     BrowserModule,

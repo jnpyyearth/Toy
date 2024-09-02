@@ -1,0 +1,43 @@
+h2{
+    color: rgb(224, 206, 121);
+    justify-content: space-between;
+    text-align: center;
+    padding: 0;
+
+}
+
+h5{
+    color: black;
+}
+
+p{
+    color: black;
+}
+.navbar {
+    width: 100%; 
+    position: relative;
+    top: 0;
+    margin : 0;
+    z-index: 1000;
+    background-color: rgb(11, 18, 2);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  }
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel-inner {
+    max-width: 500px; 
+  }
+
+  .dropdown-item {
+    color: #1a0404; 
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: #ffcc00; 
+}
