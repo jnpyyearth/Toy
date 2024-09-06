@@ -1,0 +1,58 @@
+<app-sidebar-ownner></app-sidebar-ownner>
+
+<div class="container mt-0">
+    <div class="card shadow p-4">
+        <div class="card-body">
+            <h4 class="card-header mb-4">เพิ่มข้อมูลของเล่น</h4>
+            <form>
+    
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="toy" class="form-label">ชื่อของเล่น</label>
+                        <input id="toyName" type="text" formControlName="toy" class="form-control" placeholder="กรอกชื่อ"/>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label for="category" class="form-label">หมวดหมู่</label>
+                        <select id="toycategory" formControlName="category" class="form-control">
+                            <option value="boardgame">Board Game</option>
+                            <option value="cardgame">Card Game</option>
+                            <option value="figure-model">Figure & Model</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="price" class="form-label">ราคา</label>
+                        <input id="toyprice" type="number" formControlName="price" class="form-control" min="1" placeholder="กรอกราคา"/>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label for="quantity" class="form-label">จำนวน</label>
+                        <input id="toyquantity" type="number" formControlName="quantity" class="form-control" min="1" placeholder="กรอกจำนวน"/>
+                    </div>
+                </div>
+
+                
+                <div class="mb-3">
+                    <label for="publisher" class="form-label">ผู้ผลิต</label>
+                    <input id="toypublisher" type="text" formControlName="publisher" class="form-control" placeholder="กรอกชื่อผู้ผลิต"/>
+                </div>
+
+                <div class="mb-3">
+                    <label for="releaseYear" class="form-label">ปีที่วางจำหน่าย</label>
+                    <input id="toyrelease" type="number" formControlName="releaseYear" class="form-control" min="1900" max="2024" placeholder="กรอกปีที่วางจำหน่าย"/>
+                </div>
+
+                <div class="mb-3">
+                    <label for="specialRequests" class="form-label">ข้อมูลของเล่น</label>
+                    <textarea id="gamespecial" formControlName="specialRequests" class="form-control" rows="3" ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary ">เพิ่มของเล่น</button>
+            </form>
+        </div>
+    </div>
+</div>
+
