@@ -20,6 +20,8 @@ import { FigureModelComponent } from './figure-model/figure-model.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RegisterComponent } from './register/register.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { AddProductComponent } from './Ownner/add-product/add-product.component';
+import { SidebarOwnnerComponent } from './Ownner/sidebar-ownner/sidebar-ownner.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +42,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     NavbarComponent,
     RegisterComponent,
     SidebarComponent,
+    AddProductComponent,
+    SidebarOwnnerComponent,
   ],
   imports: [
     BrowserModule,
