@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-
+import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -13,11 +13,23 @@ import { CartComponent } from './cart/cart.component';
 import { AccountComponent } from './account/account.component';
 import { LogOutComponent } from './log-out/log-out.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClient, provideHttpClient } from '@angular/common/http';
+import { provideHttpClient } from '@angular/common/http';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { RegisterComponent } from './register/register.component';
 import { UnauthorizedComponent } from './unauthorized/unauthorized.component';
-// import { AuthService } from './auth/service';
+import { RegisterMasterComponent } from './register-master/register-master.component';
+
+import { AuthGuard } from './auth/auth.guard';
+import { AuthService } from './auth/auth.service';
+import { UserServiceComponent } from './user-service/user-service.component';
+import { UserMasterComponent } from './user-master/user-master.component';
+import { ProductComponent } from './product/product.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { UserPaymentInfoComponent } from './user-payment-info/user-payment-info.component';
+import { FigureModelComponent } from './figure-model/figure-model.component';
+import { CardgameComponent } from './cardgame/cardgame.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+
 
 @NgModule({
   declarations: [
@@ -33,16 +45,28 @@ import { UnauthorizedComponent } from './unauthorized/unauthorized.component';
     LogOutComponent,
     SignInComponent,
     RegisterComponent,
-    UnauthorizedComponent
+    UnauthorizedComponent,
+    RegisterMasterComponent,
+    UserServiceComponent,
+    UserMasterComponent,
+    ProductComponent,
+    DashboardComponent,
+    UserPaymentInfoComponent,
+    FigureModelComponent,
+    CardgameComponent,
+    SidebarComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    
+    RouterModule,
+
   ],
-  providers: [provideHttpClient(), provideClientHydration(), ],
+  providers: [provideHttpClient(), provideClientHydration(), AuthGuard, AuthService],
   bootstrap: [AppComponent],
+  exports: [],
 })
 export class AppModule { }
