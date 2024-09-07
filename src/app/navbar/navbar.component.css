@@ -14,11 +14,11 @@ p{
     color: black;
 }
 .navbar {
-    width: 1200px; 
+    width: 1198px; 
     position: relative;
     top: 0;
     margin-top : -1.5rem;
-    margin-left: 150px;
+    margin-left: 210px;
     z-index: 1000;
     background-color: rgb(11, 18, 2);
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
@@ -41,4 +41,37 @@ p{
 .dropdown-item:hover {
     background-color: rgba(255, 255, 255, 0.1); 
     color: #ffcc00; 
+}
+
+.navbar-brand {
+  padding-left: 5px; 
+}
+
+.dropdown ms-auto{
+  margin-right: 2rem;
+}
+
+.dropdown{
+   margin-right: 1rem;
+}
+
+.navbar .form-control {
+  border: 1px solid #3d093d; /* สีขอบของช่องค้นหา */
+  border-radius: 30px; /* มุมมน */
+  padding: 10px 15px; /* ระยะห่างภายใน */
+  transition: all 0.2s; /* เพิ่มการเปลี่ยนแปลง */
+  height: 35px;
+}
+
+.navbar .form-control:focus {
+  border-color: #ffffff; 
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); 
+  width: 500px;
+}
+
+.navbar .btn {
+  border-radius: 20px; /* มุมมน */
+  transition: all 0.3s; /* เพิ่มการเปลี่ยนแปลง */
+  background-color:  #8800ff;
+  color: aliceblue;
 }

@@ -1,23 +1,42 @@
 h3{
     text-align: center;
     color: rgb(167, 255, 3);
-    margin-top: 2rem;
+}
+
+
+.container {
+    margin-top: 20px; 
+}
+
+.card {
+    transition: transform 0.3s;
+    width: 300px; 
+    height: 200px;  
+}
+
+.card:hover {
+    transform: scale(1.05); 
 }
 
 .card-img-top {
-    width: 100%; 
-    height: auto; 
+    height: 200px; 
     object-fit: cover; 
-    object-position: center; 
-    margin: 0; 
 }
 
-.dropdown-item {
-    color: #1a0404; /* เปลี่ยนสีข้อความ */
+.btn-primary {
+    background-color: #8800ff; 
+    border-color: #670b73; 
 }
 
-.dropdown-item:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* สีพื้นหลังเมื่อ hover */
-    color: #ffcc00; /* เปลี่ยนสีข้อความเมื่อ hover */
+.btn-primary:hover {
+    background-color: #00b315; 
+    border-color: #008535; 
+}
+.Hit-menu-show1 {
+    margin-left: 50px; 
+}
+
+.Hit-menu-show2 {
+    margin-left: 50px; 
 }
 

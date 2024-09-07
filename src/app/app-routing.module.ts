@@ -17,6 +17,8 @@ import { RegisterComponent } from './register/register.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { AddProductComponent } from './Ownner/add-product/add-product.component';
 import { SidebarOwnnerComponent } from './Ownner/sidebar-ownner/sidebar-ownner.component';
+import { AddEmployeeComponent } from './Ownner/add-employee/add-employee.component';
+
 
 
 
@@ -41,7 +43,8 @@ const routes: Routes = [
   { path : 'register', component: RegisterComponent},
   { path : 'sidebar', component: SidebarComponent},
   { path : 'add-product',component : AddProductComponent},
-  { path : 'sidebar-ownner',component : SidebarOwnnerComponent}
+  { path : 'sidebar-ownner',component : SidebarOwnnerComponent},
+  { path : 'add-employee',component : AddEmployeeComponent},
   
 ];
 

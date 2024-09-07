@@ -2,14 +2,15 @@
 <div class="sidebar" [ngClass]="{'open': isOpen}">
     <h2>Hello sir!</h2>
     <hr>
-    <a href="#"routerLink="/add-product">Add-product</a>
-    <a href="#">Add-manager</a>
+    <a routerLink="/add-product">Add-product</a>
+    <a routerLink="/add-employee">Add-employee</a>
+    <a href="#" > Employee </a>
     <a href="#">Sale</a>
     <a href="#">Sale-Report</a>
     <a href="#">Log-out</a>
 </div>
 
 <div class="main-content" [ngClass]="{'shifted': isOpen}">
-    <button (click)="toggleSidebar()">{{ isOpen ? '× close Sidebar' : '☰ open Sidebar' }}</button>
+    <button (click)="toggleSidebar()">{{ isOpen ? '×  ' : '☰  ' }}</button>
 </div>
 
