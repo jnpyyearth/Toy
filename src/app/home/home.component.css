@@ -18,8 +18,31 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 5rem;
+    margin-left: 3rem;
+    width: 1200px;
+    height: 400px;
   }
 
   .carousel-inner {
     max-width: 500px; 
   }
+
+  .dropdown-item {
+    color: #1a0404; 
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: #ffcc00; 
+}
+
+.carousel-control-prev-icon {
+    width: 25px;  
+    height: 25px;
+    margin-left: 10rem;
+}
+
+.carousel-indicators{
+    margin-bottom: -4rem;
+}

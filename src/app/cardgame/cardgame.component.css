@@ -1,0 +1,60 @@
+h3{
+    text-align: center;
+    right: 5rem;
+    color: rgb(167, 255, 3);
+}
+
+h2{
+    color: rgb(224, 206, 121);
+    justify-content: space-between;
+    text-align: center;
+    padding: 0;
+
+}
+
+h5{
+    color: black;
+}
+
+p{
+    color: black;
+}
+
+.container {
+    margin-top: 20px; 
+}
+
+.card {
+    transition: transform 0.3s;
+    width: 300px; 
+    height: 200px; 
+
+     
+}
+
+.card:hover {
+    transform: scale(1.05); 
+}
+
+.card-img-top {
+    height: 200px; 
+    object-fit: cover; 
+}
+
+.btn-primary {
+    background-color: #8800ff; 
+    border-color: #670b73; 
+}
+
+.btn-primary:hover {
+    background-color: #00b315; 
+    border-color: #008535; 
+}
+
+.Hit-menu-show1 {
+    margin-left: 60px; 
+}
+
+.Hit-menu-show2 {
+    margin-left: 60px; 
+}

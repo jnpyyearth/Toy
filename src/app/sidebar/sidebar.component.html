@@ -1,0 +1,24 @@
+
+<div class="sidebar" [ngClass]="{'open': isOpen}">
+    <h2> ToyPaPlean </h2>
+    <hr>
+    <a routerLink="/home"><i class="bi bi-house"></i> Home</a>
+    <div class="dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Toy-Catagory
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" routerLink="/boardgame">Boardgame</a></li>
+            <li><a class="dropdown-item" routerLink="/cardgame">Cardgame</a></li>
+            <li><a class="dropdown-item" routerLink="/figure-model">Figure & Model</a></li>
+        </ul>
+    </div>
+    <a class="nav-link" routerLink="/cart"><i class="bi bi-basket-fill"></i> My-cart</a>
+    <a class="nav-link" routerLink="/contact-us">Contact-us</a>
+    <a routerLink="/about-us">About-us</a>
+    <a routerLink="/log-in">Log-out</a>
+</div>
+
+<div class="main-content" [ngClass]="{'shifted': isOpen}">
+    <button (click)="toggleSidebar()">{{ isOpen ? '× ' : '☰ ' }}</button>
+</div>

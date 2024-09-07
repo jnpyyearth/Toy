@@ -1,0 +1,33 @@
+.card-header {
+    background-color:  #8800ff;
+    color: white;
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    border-bottom: 2px solid  #8800ff;
+}
+.card-body {
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 3rem;
+    
+}
+.form-label {
+    font-weight: bold;
+}
+.form-control {
+    border-radius: 1rem;
+}
+.btn-primary {
+    background-color:  #8800ff;
+    border: none;
+    border-radius: 0.5rem;
+}
+.btn-primary:hover {
+    background-color:  #8800ff;
+}
+
+.container{
+    margin-left: 15rem;
+    width: 1000px;
+}

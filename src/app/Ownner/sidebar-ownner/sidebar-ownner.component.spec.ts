@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MenuComponent } from './menu.component';
+import { SidebarOwnnerComponent } from './sidebar-ownner.component';
 
-describe('MenuComponent', () => {
-  let component: MenuComponent;
-  let fixture: ComponentFixture<MenuComponent>;
+describe('SidebarOwnnerComponent', () => {
+  let component: SidebarOwnnerComponent;
+  let fixture: ComponentFixture<SidebarOwnnerComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [MenuComponent]
+      declarations: [SidebarOwnnerComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MenuComponent);
+    fixture = TestBed.createComponent(SidebarOwnnerComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
