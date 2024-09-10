@@ -17,7 +17,7 @@ body {
 }
 
 .sidebar.open {
-  left: 0; 
+  left: 0px; 
 }
 
 .sidebar h2 {
@@ -45,14 +45,17 @@ body {
   transition: margin-left 0.3s; 
 }
 
-.main-content.shifted {
-  margin-left: 250px; 
+
+
+.main-content.slide button{
+  left: 16rem;
 }
+
 
 .main-content button{
   position: fixed;
-  left: 10rem;
-  margin-left: 6rem;
+  left: 0;
+  
   margin-top: -4.6rem;
   padding: 12px 22px; /* ขยายขนาดปุ่ม */
   font-size: 18px; 
@@ -63,12 +66,16 @@ body {
   /*border-radius: 5px; */
   cursor: pointer; 
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  transition: left 0.3s; 
   
 }
 
 .main-content button:hover {
   background-color: #320a2b; 
+  
 }
+
+
 
 .sidebar .dropdown-menu {
   background-color: #cc9edd; 

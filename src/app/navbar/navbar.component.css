@@ -74,4 +74,10 @@ p{
   transition: all 0.3s; /* เพิ่มการเปลี่ยนแปลง */
   background-color:  #8800ff;
   color: aliceblue;
+  cursor: pointer;
+}
+
+.navbar .btn:hover{
+transform: scale(1.1);
+box-shadow: 0 0 15px 0 #8800ff ;
 }

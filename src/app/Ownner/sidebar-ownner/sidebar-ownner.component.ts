@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-sidebar-ownner',
@@ -6,11 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./sidebar-ownner.component.css'] 
 })
 export class SidebarOwnnerComponent {
-  isOpen = false; 
+  isOpen = false;
 
-  toggleSidebar() {
-      this.isOpen = !this.isOpen; 
+  toggleSidebar1() {
+    this.isOpen = !this.isOpen;
+    console.log('Sidebar isOpen: ', this.isOpen);
   }
-
+  
 
 }

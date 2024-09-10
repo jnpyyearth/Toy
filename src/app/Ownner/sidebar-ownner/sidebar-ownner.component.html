@@ -10,7 +10,7 @@
     <a href="#">Log-out</a>
 </div>
 
-<div class="main-content" [ngClass]="{'shifted': isOpen}">
-    <button (click)="toggleSidebar()">{{ isOpen ? '×  ' : '☰  ' }}</button>
+<div class="main-content" [ngClass]="{'slide': isOpen}">
+    <button class="main-content" (click)="toggleSidebar1()">{{ isOpen ? '× ' : '☰ ' }}</button>
+ 
 </div>
-
