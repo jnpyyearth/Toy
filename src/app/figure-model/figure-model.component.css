@@ -1,8 +1,47 @@
-.dropdown-item {
-    color: #1a0404; 
+h3{
+    text-align: center;
+    color: rgb(167, 255, 3);
 }
 
-.dropdown-item:hover {
-    background-color: rgba(255, 255, 255, 0.1); 
-    color: #ffcc00; 
+
+.container {
+    margin-top: 50px; 
+    margin-left: 4.5rem;
+}
+
+.card {
+    transition: transform 0.3s;
+    width: 250px; 
+    height: 150px; 
+    /*background-color: #360c4d; */
+    border: 1px solid #231f1f;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.05); 
+}
+
+.card-img-top {
+    height: 200px; 
+    object-fit: cover; 
+}
+
+.card-text {
+    font-size: 16px; 
+    color: #c72727; 
+}
+
+.btn-primary {
+    background-color: #8800ff; 
+    border-color: #670b73; 
+}
+
+.btn-primary:hover {
+    background-color: #00b315; 
+    border-color: #008535; 
+}
+.fig-show1 {
+    margin-left: 50px; 
 }

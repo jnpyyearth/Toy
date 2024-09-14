@@ -55,19 +55,18 @@ body {
 .main-content button{
   position: fixed;
   left: 0;
-  
-  margin-top: -4.6rem;
-  padding: 12px 22px; /* ขยายขนาดปุ่ม */
+  margin-top: -6rem;
+  padding: 20px 25px; /* ขยายขนาดปุ่ม */
   font-size: 18px; 
   background-color: #0e010a; 
   color: white; 
   border: none;
-  height: 53px;
+  height: 75px;
   /*border-radius: 5px; */
   cursor: pointer; 
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
   transition: left 0.3s; 
-  
+  font-size: 22px;
 }
 
 .main-content button:hover {
@@ -92,4 +91,10 @@ body {
 .sidebar .dropdown-item:hover {
   background-color: #280429; 
   color: #cc9edd;
+}
+footer .logo-img {
+  width: 155px; 
+  height: auto;
+  margin-left: 2.5rem;
+  margin-top: 6rem;
 }

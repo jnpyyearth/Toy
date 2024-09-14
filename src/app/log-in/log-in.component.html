@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>log-in</title>
-    <link rel = "stylesheet" href="log-in.component.css">
     <link rel="stylesheet" href="https://use.typekit.net/ill0wwk.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
     <div class="loginbox">
-        <form action="">
+        <form (ngSubmit)="onSubmit()">
            <h1> Login</h1>
             <div class="input-box">
                 <input type="text" placeholder="Username" 
@@ -30,7 +29,7 @@
                 <a hef="#">Forgot password</a>
             </div>
 
-            <button type="submit" class="btn" href="#" routerLink="/home">Login</button>
+            <button type="submit" class="btn" [routerLink]="'/home'">Login</button>
             
             <div class="register-link">
             <p> Don't have an acoount ? <a hef="#" routerLink="/register">Register</a></p>
