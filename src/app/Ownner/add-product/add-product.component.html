@@ -1,14 +1,16 @@
+
+<app-navbar/>
 <app-sidebar-ownner></app-sidebar-ownner>
 <div class="container mt-0">
     <div class="card shadow p-4">
         <div class="card-body">
-            <h4 class="card-header mb-4"><i class="bi bi-archive-fill"></i>  เพิ่มสินค้าในร้าน</h4>
+            <h4 class="card-header mb-4"><i class="bi bi-archive-fill"></i>  ADD PRODUCT</h4>
             <form>
     
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <label for="toy" class="form-label">ชื่อของเล่น</label>
-                        <input id="toyName" type="text" formControlName="toy" class="form-control" placeholder="กรอกชื่อ"/>
+                        <input id="toyName" type="text" formControlName="toy" class="form-control" placeholder="name"/>
                     </div>
 
                     <div class="col-md-6 mb-3">
@@ -49,7 +51,7 @@
                     <textarea id="gamespecial" formControlName="specialRequests" class="form-control" rows="3" ></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-primary ">เพิ่มของเล่น</button>
+                <button type="submit" class="btn btn-primary ">ADD it!</button>
             </form>
         </div>
     </div>

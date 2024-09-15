@@ -10,8 +10,7 @@ body {
   position: fixed;
   top: 0; 
   left: -250px; 
-  background: linear-gradient(10deg, rgba(43,5,69,1) 0%, rgba(185,19,170,1) 50%, rgba(105,21,69,1) 100%);
-  padding-top: 20px;
+  background: linear-gradient(10deg, rgba(0,0,0,1) 0%, rgba(74,28,138,1) 21%, rgba(168,53,171,1) 49%, rgba(138,28,87,1) 77%, rgba(0,0,0,1) 100%);
   transition: left 0.3s; 
   box-shadow: 0 0 15px rgba(255, 166, 255, 0.929);
 }
@@ -23,6 +22,7 @@ body {
 .sidebar h2 {
   color: #fff;
   text-align: center;
+  margin-top: 2rem;
 }
 
 .sidebar a {
@@ -56,18 +56,18 @@ body {
 .main-content button{
   position: fixed;
   left: 0;
-  margin-top: -4.6rem;
-  padding: 12px 22px; /* ขยายขนาดปุ่ม */
+  margin-top: -8rem;
+  padding: 20px 25px; /* ขยายขนาดปุ่ม */
   font-size: 18px; 
   background-color: #0e010a; 
   color: white; 
   border: none;
-  height: 53px;
+  height: 78px;
   /*border-radius: 5px; */
   cursor: pointer; 
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
   transition: left 0.3s; 
-  
+  font-size: 22px;
 }
 
 .main-content button:hover {
@@ -92,4 +92,11 @@ body {
 .sidebar .dropdown-item:hover {
   background-color: #280429; 
   color: #cc9edd;
+}
+
+footer .logo-img {
+  width: 155px; 
+  height: auto;
+  margin-left: 2.5rem;
+  margin-top: 6rem;
 }

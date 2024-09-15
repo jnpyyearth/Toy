@@ -16,8 +16,8 @@ b {
 }
 
 .btn {
-    border-radius: 20px; /* มุมมน */
-    transition: all 0.3s; /* เพิ่มการเปลี่ยนแปลง */
+    border-radius: 20px; 
+    transition: all 0.3s; 
     background-color:  #8800ff;
     color: aliceblue;
     cursor: pointer;
