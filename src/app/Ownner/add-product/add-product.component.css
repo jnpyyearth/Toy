@@ -1,3 +1,19 @@
+body {
+    display: flex;
+    flex-direction: row; 
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-left: 250px; 
+    padding-top: 20px; 
+}
+.card {
+    background-color: #030003; 
+    color: #fbfbfb; 
+}
+
 .card-header {
     background-color:  #8800ff;
     color: white;
@@ -5,12 +21,12 @@
     font-size: 1.25rem;
     font-weight: bold;
     border-bottom: 2px solid  #8800ff;
+    border-radius: 10px;
 }
 .card-body {
     border-radius: 1rem;
     overflow: hidden;
     margin-bottom: 3rem;
-    
 }
 .form-label {
     font-weight: bold;

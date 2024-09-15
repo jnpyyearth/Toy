@@ -1,8 +1,45 @@
+
+h2{
+color: white;
+font-weight: 10px;
+font-size: 40px
+}
+
+
 b {
-    color: azure;
+    color: rgb(29, 154, 154);
+    font-size: 20px;
 }
 
 .form-label{
     color: aliceblue;
 }
 
+.btn {
+    border-radius: 20px; 
+    transition: all 0.3s; 
+    background-color:  #8800ff;
+    color: aliceblue;
+    cursor: pointer;
+    margin-right: 1.5rem;
+  }
+
+.btn:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 0 #8800ff ;
+    }
+
+
+
+footer{
+    background-color: black;
+    margin-left: -7rem;
+    margin-right: -6.9rem;
+}
+
+footer .logo-img{
+    max-width: 200px;
+    max-height: 150px;
+    margin-left: 80rem;
+    padding-left: 4rem;
+}

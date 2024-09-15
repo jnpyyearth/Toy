@@ -5,13 +5,18 @@ h3{
 
 
 .container {
-    margin-top: 20px; 
+    margin-top: 50px; 
+    margin-left: 4.5rem;
 }
 
 .card {
     transition: transform 0.3s;
-    width: 300px; 
-    height: 200px;  
+    width: 250px; 
+    height: 150px; 
+    /*background-color: #360c4d; */
+    border: 1px solid #231f1f;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .card:hover {
@@ -22,6 +27,12 @@ h3{
     height: 200px; 
     object-fit: cover; 
 }
+
+.card-text {
+    font-size: 16px; 
+    color: #c72727; 
+}
+
 
 .btn-primary {
     background-color: #8800ff; 
@@ -36,7 +47,4 @@ h3{
     margin-left: 50px; 
 }
 
-.Hit-menu-show2 {
-    margin-left: 50px; 
-}
 

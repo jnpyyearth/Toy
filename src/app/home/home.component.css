@@ -18,31 +18,33 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5rem;
-    margin-left: 3rem;
+    margin-top: 10rem;
+    margin-left: 5rem;
     width: 1200px;
     height: 400px;
   }
 
   .carousel-inner {
-    max-width: 500px; 
+    max-width: 900px; 
+    max-height: 600px;
   }
 
-  .dropdown-item {
-    color: #1a0404; 
-}
-
-.dropdown-item:hover {
-    background-color: rgba(255, 255, 255, 0.1); 
-    color: #ffcc00; 
-}
-
-.carousel-control-prev-icon {
-    width: 25px;  
-    height: 25px;
+/*.carousel-control-prev-icon {
+    width: 300px;  
+    height: 300px;
     margin-left: 10rem;
-}
+}*/
 
 .carousel-indicators{
-    margin-bottom: -4rem;
+    margin-top: -15rem;
+    margin-bottom: -9rem;
+    width: 150px;
+    margin-left: 520px;
 }
+
+.carousel-item img {
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+  }
+  
