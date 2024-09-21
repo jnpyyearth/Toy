@@ -1,1 +1,119 @@
-<p>cart works!</p>
+<!-- <h3>Cart Items</h3>
+<div class="cart-container" *ngIf="cartItems.length > 0; else emptyCart">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of cartItems">
+        <td>{{ item.name }}</td>
+        <td>{{ item.price }} ฿</td>
+        <td>{{ item.Quantity }}</td>
+        <td>{{ item.description }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <a class="btn btn-primary" (click)="checkout()" routerLink="/home">Checkout</a>
+  <button class="btn btn-danger" (click)="clearCart()">Clear Cart</button>
+</div>
+
+<ng-template #emptyCart>
+  <p>Your cart is empty</p>
+</ng-template> -->
+
+
+
+<!-- <h3>Cart Items</h3>
+<div class="cart-container" *ngIf="cartItems.length > 0; else emptyCart">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Description</th>
+        <th>Update</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of cartItems">
+        <td>{{ item.name }}</td>
+        <td>{{ item.price }} ฿</td>
+        <td>
+
+          <input type="number" [(ngModel)]="item.Quantity" min="1" />
+        </td>
+        <td>{{ item.description }}</td>
+        <td>
+          <button class="btn btn-secondary" (click)="updateCart(item)">Update</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="cart-totals">
+    <p>Total Quantity: {{ getTotalQuantity() }}</p>
+    <p>Total Price: {{ getTotalPrice() }} ฿</p>
+  </div>
+
+  <a class="btn btn-primary" (click)="checkout()" routerLink="/home">Checkout</a>
+  <button class="btn btn-danger" (click)="clearCart()">Clear Cart</button>
+</div>
+
+<ng-template #emptyCart>
+  <p>Your cart is empty</p>
+</ng-template> -->
+
+
+<h3>Cart Items</h3>
+<div class="cart-container" *ngIf="cartItems.length > 0; else emptyCart">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Description</th>
+        <th>Update</th>
+        <th>Delete</th> <!-- New column for Delete -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of cartItems">
+        <td>{{ item.name }}</td>
+        <td>{{ item.price }} ฿</td>
+        <td>
+          <!-- Input for updating quantity -->
+          <input type="number" [(ngModel)]="item.Quantity" min="1" />
+        </td>
+        <td>{{ item.description }}</td>
+        <td>
+          <!-- Button to update the cart with new quantity -->
+          <button class="btn btn-secondary" (click)="updateCart(item)">Update</button>
+        </td>
+        <td>
+          <!-- Button to delete the item -->
+          <button class="btn btn-danger" (click)="deleteFromCart(item)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Display total quantity and total price -->
+  <div class="cart-totals">
+    <p>Total Quantity: {{ getTotalQuantity() }}</p>
+    <p>Total Price: {{ getTotalPrice() }} ฿</p>
+  </div>
+
+  <a class="btn btn-primary" (click)="checkout()" routerLink="/home">Checkout</a>
+  <button class="btn btn-danger" (click)="clearCart()">Clear Cart</button>
+</div>
+
+<ng-template #emptyCart>
+  <p>Your cart is empty</p>
+</ng-template>

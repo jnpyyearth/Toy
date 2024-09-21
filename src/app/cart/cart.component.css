@@ -1,0 +1,62 @@
+/* Style for the cart container */
+h3 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cart-container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for individual cart items */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item p {
+  font-size: 18px;
+  color: #555;
+  margin: 0;
+}
+
+.cart-item p span {
+  font-weight: bold;
+}
+
+/* Clear Cart Button */
+button.btn-danger {
+  background-color: #dc3545;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+  display: block;
+  width: 100%;
+}
+
+button.btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* Empty cart message */
+p {
+  text-align: center;
+  color: #999;
+  font-size: 16px;
+}

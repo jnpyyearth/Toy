@@ -15,19 +15,42 @@ import { AuthGuard } from './auth/auth.guard';
 import { RegisterMasterComponent } from './register-master/register-master.component';
 import { UnauthorizedComponent } from './unauthorized/unauthorized.component';
 import { UserServiceComponent } from './user-service/user-service.component';
-import { UserMasterComponent} from './user-master/user-master.component';
+import { UserMasterComponent } from './user-master/user-master.component';
 import { ProductComponent } from './product/product.component';
 import { UserPaymentInfoComponent } from './user-payment-info/user-payment-info.component';
 import { FigureModelComponent } from './figure-model/figure-model.component';
 import { CardgameComponent } from './cardgame/cardgame.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { AddProductComponent } from './add-product/add-product.component';
+import { BoardgameComponent } from './boardgame/boardgame.component';
+import { UpdateStockComponent } from './update-stock/update-stock.component';
+import { EditProductComponent } from './edit-product/edit-product.component';
+import { SettingComponent } from './setting/setting.component';
+import { PaymentComponent } from './payment/payment.component';
+import { RestockComponent } from './restock/restock.component';
+
 const routes: Routes = [
   { path: '', redirectTo: 'log-in', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent,  },
-  { path: 'menu', component: MenuComponent, canActivate: [AuthGuard], data: { roles: ['manager', 'employee'] } },
-  { path: 'about-us', component: AboutUsComponent, canActivate: [AuthGuard], data: { roles: ['manager', 'employee', 'user'] } },
+  { path: 'home', component: HomeComponent },
+  {
+    path: 'menu',
+    component: MenuComponent,
+    canActivate: [AuthGuard],
+    data: { roles: ['manager', 'employee'] },
+  },
+  {
+    path: 'about-us',
+    component: AboutUsComponent,
+    canActivate: [AuthGuard],
+    data: { roles: ['manager', 'employee', 'user'] },
+  },
   { path: 'inventory', component: InventoryComponent },
-  { path: 'contact-us', component: ContactUsComponent, canActivate: [AuthGuard], data: { roles: ['manager', 'employee', 'user'] } },
+  {
+    path: 'contact-us',
+    component: ContactUsComponent,
+    canActivate: [AuthGuard],
+    data: { roles: ['manager', 'employee', 'user'] },
+  },
   { path: 'cart', component: CartComponent },
   { path: 'account', component: AccountComponent },
   { path: 'log-out', component: LogOutComponent },
@@ -42,12 +65,20 @@ const routes: Routes = [
   { path: 'user-payment-info', component: UserPaymentInfoComponent },
   { path: 'figure-model', component: FigureModelComponent },
   { path: 'cardgame', component: CardgameComponent },
-  {path: 'sidebar', component: SidebarComponent},
-  { path: '**', redirectTo: 'home' } // Catch-all route
+  { path: 'sidebar', component: SidebarComponent },
+  { path: 'add-product', component: AddProductComponent },
+  { path: 'boardgame', component: BoardgameComponent },
+  { path: 'update-product/:id', component: UpdateStockComponent },
+  { path: 'update-product', component: EditProductComponent },
+  { path: 'setting', component: SettingComponent },
+  { path: 'payment', component: PaymentComponent },
+  { path: 'restock/:productId', component: RestockComponent },
+
+  { path: '**', redirectTo: 'home' }, // Catch-all route
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

@@ -9,12 +9,11 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { InventoryComponent } from './inventory/inventory.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { LogInComponent } from './log-in/log-in.component';
-import { CartComponent } from './cart/cart.component';
+// import { CartComponent } from './cart/cart.component';
 import { AccountComponent } from './account/account.component';
 import { LogOutComponent } from './log-out/log-out.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { provideHttpClient } from '@angular/common/http';
-import { SignInComponent } from './sign-in/sign-in.component';
 import { RegisterComponent } from './register/register.component';
 import { UnauthorizedComponent } from './unauthorized/unauthorized.component';
 import { RegisterMasterComponent } from './register-master/register-master.component';
@@ -29,6 +28,16 @@ import { UserPaymentInfoComponent } from './user-payment-info/user-payment-info.
 import { FigureModelComponent } from './figure-model/figure-model.component';
 import { CardgameComponent } from './cardgame/cardgame.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { AddProductComponent } from './add-product/add-product.component';
+import { BoardgameComponent } from './boardgame/boardgame.component';
+import { UpdateStockComponent } from './update-stock/update-stock.component';
+import { EditProductComponent } from './edit-product/edit-product.component';
+import { CartComponent } from './cart/cart.component';
+import { PaymentComponent } from './payment/payment.component';
+import { SettingComponent } from './setting/setting.component';
+import { RestockComponent } from './restock/restock.component';
+import { NavbarComponent } from './navbar/navbar.component';
+
 
 
 @NgModule({
@@ -43,7 +52,6 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     CartComponent,
     AccountComponent,
     LogOutComponent,
-    SignInComponent,
     RegisterComponent,
     UnauthorizedComponent,
     RegisterMasterComponent,
@@ -54,7 +62,17 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     UserPaymentInfoComponent,
     FigureModelComponent,
     CardgameComponent,
-    SidebarComponent
+    SidebarComponent,
+    AddProductComponent,
+    BoardgameComponent,
+    UpdateStockComponent,
+    EditProductComponent,
+    PaymentComponent,
+    SettingComponent,
+    RestockComponent,
+    NavbarComponent,
+
+
 
   ],
   imports: [
