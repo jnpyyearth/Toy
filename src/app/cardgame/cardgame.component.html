@@ -1,4 +1,4 @@
-<app-navbar />
+<!-- <app-navbar />
 <app-sidebar />
 <h3> Cardgame </h3>
 <hr />
@@ -89,4 +89,57 @@
         </div>
     </div>
     <hr />
-</div>
+</div> -->
+
+
+<app-navbar />
+<app-sidebar />
+
+<h3>Cardgame</h3>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-10 ml-auto">
+            <div class="Hit-menu-show1">
+                <div class="row row-cols-1 row-cols-md-4 g-5">
+                    <!-- <div class="col" *ngFor="let game of filteredGames()">
+                <div class="card h-100">
+                  <img [src]="game.image" class="card-img-top" [alt]="game.name" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                        <a [routerLink]="['/product-detail', game.product_id]">{{ game.name }}</a>
+                      </h5>
+                    <p class="card-text">{{ game.price }} ฿</p>
+                    <button class="btn btn-primary" (click)="addToCart(game)"routerLink="/cart">
+                      เพิ่มในตะกร้า
+                    </button> 
+                  </div>
+                </div>
+              </div>
+            </div> -->
+                    <div class="col" *ngFor="let game of filteredGames()">
+                        <div class="card h-100">
+                            <img [src]="game.image" class="card-img-top" [alt]="game.name" />
+                            <div class="card-body">
+                                <h5 class="card-title">{{ game.name }}</h5>
+                                <p class="card-text">{{ game.price }} ฿</p>
+                                <div class="form-group">
+                                    <label for="quantity">Quantity:</label>
+                                    <input type="number" [(ngModel)]="game.quantity" min="1" class="form-control"
+                                        id="quantity" />
+                                </div>
+                                <button class="btn btn-primary" (click)="addToCart(game)">
+                                    เพิ่มลงตะกร้า
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="btn btn-secondary mt-3" routerLink="/cart">Go to Cart</a>
+            </div>
+        </div>
+    </div>
+
+
+    <app-footer />

@@ -2,9 +2,34 @@
 h2{
 color: white;
 font-weight: 10px;
-font-size: 40px
+font-size: 40px;
+margin-left: 600px
 }
 
+
+
+.back{
+    margin-left: 770px;
+    border-radius: 40px;
+    background-color: #8800ff;
+    display: flex;
+    justify-items: right;
+    align-items: right;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    font-weight: 10px;
+}
+
+.back:hover{
+    box-shadow: 0 0 15px 0 #8800ff;
+    transform: scale(1.2);
+    color: white;
+
+}
+
+.form{
+    margin-right: 10rem;
+}
 
 b {
     color: rgb(29, 154, 154);
@@ -29,8 +54,6 @@ b {
     box-shadow: 0 0 15px 0 #8800ff ;
     }
 
-
-
 footer{
     background-color: black;
     margin-left: -7rem;
@@ -42,4 +65,16 @@ footer .logo-img{
     max-height: 150px;
     margin-left: 80rem;
     padding-left: 4rem;
+}
+
+.save{
+    margin-left: 500px;
+    border-radius: 40px;
+    background-color: #8800ff;
+    display: flex;
+    justify-items: right;
+    align-items: right;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    font-weight: 10px;
 }

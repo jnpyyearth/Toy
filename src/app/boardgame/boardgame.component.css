@@ -17,6 +17,7 @@ h3{
     border: 1px solid #231f1f;
     border-radius: 8px;
     overflow: hidden;
+
 }
 
 .card:hover {
@@ -33,6 +34,16 @@ h3{
     color: #c72727; 
 }
 
+.card-title {
+    transition: all 0.3s;
+    cursor: pointer;
+    color: #231f1f;
+}
+
+.card-title:hover { 
+    color: blueviolet;
+}
+
 
 .btn-primary {
     background-color: #8800ff; 
@@ -47,4 +58,35 @@ h3{
     margin-left: 50px; 
 }
 
+/* styles.css หรือไฟล์ CSS ของ component */
+
+.sidebar {
+    position: fixed;
+    width: 250px; /* กว้างของ sidebar */
+    height: 100%; /* ความสูงเต็มที่ */
+    background: #fff; /* สีพื้นหลังของ sidebar */
+    transform: translateX(-100%); /* ซ่อน sidebar นอกหน้าจอ */
+    transition: transform 0.3s ease; /* เวลาในการเคลื่อนที่ */
+    z-index: 1000; /* จัดลำดับการแสดงผล */
+}
+
+.sidebar.open {
+    transform: translateX(0); /* แสดง sidebar */
+}
+
+.main-content {
+    transition: margin-left 0.3s ease; /* เวลาในการเคลื่อนที่ */
+}
+
+.main-content.slide {
+    margin-left: 250px; /* ขยับเนื้อหาเมื่อ sidebar เปิด */
+}
+
+.navbar {
+    transition: margin-left 0.3s ease; /* เวลาในการเคลื่อนที่ */
+}
+
+.navbar.slide {
+    margin-left: 250px; /* ขยับ navbar เมื่อ sidebar เปิด */
+}
 

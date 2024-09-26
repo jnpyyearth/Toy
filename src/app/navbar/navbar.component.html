@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(10deg, rgba(0,0,0,1) 0%, rgba(74,28,138,1) 21%, rgba(168,53,171,1) 49%, rgba(138,28,87,1) 77%, rgba(0,0,0,1) 100%);">
-    <div class="container-fluid w-100">
-      <img src="/assets/images/ToyPapleansmall.png" class="logo-img" alt="">
+<nav class="navbar navbar-expand-lg navbar-dark " [ngClass]="{'navbar-slide': isOpen}"   style=" background: linear-gradient(10deg, rgba(0,0,0,1) 0%, rgba(74,28,138,1) 21%, rgba(168,53,171,1) 49%, rgba(138,28,87,1) 77%, rgba(0,0,0,1) 100%);">
+    <div class="container-fluid w-100 d-flex align-items-center">
+      <img src="/assets/images/ToyPapleansmall.png" class="logo-img " alt="">
       <a class="navbar-brand ms-5"  href="#" >ToyPaPlern</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -9,8 +9,19 @@
       <div class="collapse navbar-collapse w-100 ms-5" id="navbarNav">
         <form class="d-flex me-auto" role="search">
             <input class="form-control me-2" type="search" placeholder="เลือกซื้ออะไรดีน้า" aria-label="Search">
+            <!-- <input class="form-control me-2"
+            type="text"
+            placeholder="Search by Product Name or Category"
+            [(ngModel)]="searchQuery"
+            class="form-control"
+          />  -->
+
             <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
+
+        
+
+
         
         
         <div class="dropdown "> 
@@ -18,8 +29,8 @@
             <i class="bi bi-person-circle"></i> Account
           </button>
           <ul class="dropdown-menu">
-            <li><b class="dropdown-item" href="#" routerLink="/log-in">Log-out</b></li>
-            <li><b class="dropdown-item" href="#" routerLink="/setting">seting</b></li>
+           <li><b class="dropdown-item" href="#" routerLink="/setting">seting</b></li> 
+           <li><b class="dropdown-item" href="#" routerLink="/log-in">Log-out</b></li>
           </ul>
         </div>
       </div>

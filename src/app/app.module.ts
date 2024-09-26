@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
-import { ReactiveFormsModule } from '@angular/forms';  // Add this import
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';  // Add this import
 import { AppRoutingModule } from './app-routing.module';
+import { provideHttpClient } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './about-us/about-us.component';
@@ -23,6 +23,16 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { AddProductComponent } from './Ownner/add-product/add-product.component';
 import { SidebarOwnnerComponent } from './Ownner/sidebar-ownner/sidebar-ownner.component';
 import { AddEmployeeComponent } from './Ownner/add-employee/add-employee.component';
+import { RouterModule } from '@angular/router';
+import { SupplierComponent } from './supplier/supplier.component';
+import { SaleReportComponent } from './sale-report/sale-report.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { EditProductComponent } from './edit-product/edit-product.component';
+import { FooterComponent } from './footer/footer.component';
+import { UpdateStockComponent } from './update-stock/update-stock.component';
+import { RestockComponent } from './restock/restock.component';
+import { AddSupplierComponent } from './add-supplier/add-supplier.component';
+import { SupplierReportComponent } from './supplier-report/supplier-report.component';
 
 @NgModule({
   declarations: [
@@ -45,15 +55,26 @@ import { AddEmployeeComponent } from './Ownner/add-employee/add-employee.compone
     SidebarComponent,
     AddProductComponent,
     SidebarOwnnerComponent,
-    AddEmployeeComponent
+    AddEmployeeComponent,
+    SupplierComponent,
+    SaleReportComponent,
+    ProductDetailComponent,
+    EditProductComponent,
+    FooterComponent,
+    UpdateStockComponent,
+    RestockComponent,
+    AddSupplierComponent,
+    SupplierReportComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule  // Add this to the imports array
+    ReactiveFormsModule,  // Add this to the imports array
+    RouterModule,
+    FormsModule
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(), provideHttpClient()
   ],
   bootstrap: [AppComponent]
 })

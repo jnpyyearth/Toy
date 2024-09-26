@@ -1,6 +1,9 @@
 
-<app-navbar/>
-<app-sidebar-ownner></app-sidebar-ownner>
+
+<div class="contain">
+  <app-navbar/>
+<app-sidebar-ownner/>
+<!-- 
 <div class="container mt-0">
     <div class="card shadow p-4">
         <div class="card-body">
@@ -57,4 +60,146 @@
     </div>
 </div>
 <br>
+ -->
 
+
+ <!-- <div class="container mt-0">
+    <div class="card shadow p-4">
+      <div class="card-body">
+        <h4 class="card-header mb-4">เพิ่มข้อมูลของเล่น</h4>
+        <form [formGroup]="addProductForm" (ngSubmit)="onSubmit()">
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="category" class="form-label">หมวดหมู่</label>
+              <select
+                id="toycategory"
+                formControlName="category"
+                class="form-control"
+              >
+                <option *ngFor="let category of gameCategories" [value]="category.id">
+                  {{ category.name }}
+                </option>
+              </select>
+            </div>
+  
+            <div class="col-md-6 mb-3">
+              <label for="toyName" class="form-label">ชื่อของเล่น</label>
+              <input
+                id="toyName"
+                type="text"
+                formControlName="toyName"
+                class="form-control"
+                placeholder="กรอกชื่อ"
+              />
+            </div>
+          </div>
+  
+          <div class="mb-3">
+            <label for="description" class="form-label">ข้อมูลของเล่น</label>
+            <textarea
+              id="gamespecial"
+              formControlName="description"
+              class="form-control"
+              rows="3"
+            ></textarea>
+          </div>
+  
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="price" class="form-label">ราคา</label>
+              <input
+                id="toyprice"
+                type="number"
+                formControlName="price"
+                class="form-control"
+                min="1"
+                placeholder="กรอกราคา"
+              />
+            </div>
+  
+            <div class="col-md-6 mb-3">
+              <label for="quantity" class="form-label">จำนวนสินค้า</label>
+              <input
+                id="quantity"
+                type="number"
+                formControlName="quantity"
+                class="form-control"
+                min="1"
+                placeholder="กรอกจำนวนสินค้า"
+              />
+            </div>
+          </div>
+  
+          <div class="mb-3">
+            <label for="imgUrl" class="form-label">Url ภาพของเล่น</label>
+            <textarea
+              id="imgUrl"
+              formControlName="imgUrl"
+              class="form-control"
+              rows="3"
+            ></textarea>
+          </div>
+  
+          <button type="submit" class="btn btn-primary" [disabled]="!addProductForm.valid">
+            เพิ่มของเล่น
+          </button>
+        </form>
+      </div>
+    </div>
+  </div> -->
+ 
+<div class="container mt-0">
+  <div class="card shadow p-4"> 
+    <h1>Let's add!!</h1>
+    <div class="card-body">
+      <!-- <h4 class="card-header mb-4"><i class="bi bi-pencil-square">Add product</i></h4> -->
+      <form [formGroup]="addProductForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="category" class="form-label">หมวดหมู่</label>
+            <select id="toycategory" formControlName="category" class="form-control">
+              <option *ngFor="let category of gameCategories" [value]="category.id">
+                {{ category.name }}
+              </option>
+            </select>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label for="toyName" class="form-label">ชื่อสินค้า</label>
+            <input id="toyName" type="text" formControlName="toyName" class="form-control" placeholder="กรอกชื่อ" />
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="description" class="form-label">รายละเอียดสินค้า</label>
+          <textarea id="gamespecial" formControlName="description" class="form-control" rows="3"></textarea>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="price" class="form-label">ราคา-฿</label>
+            <input id="toyprice" type="number" formControlName="price" class="form-control" min="1"
+              placeholder="กรอกราคา" />
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label for="quantity" class="form-label">จำนวนสินค้า</label>
+            <input id="quantity" type="number" formControlName="quantity" class="form-control" min="1"
+              placeholder="กรอกจำนวนสินค้า" />
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="imgUrl" class="form-label">Url ภาพสินค้า</label>
+          <textarea id="imgUrl" formControlName="imgUrl" class="form-control" rows="3"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary"  (click)="showPopup()">
+          Add it!!
+        </button>
+
+      </form>
+    </div>
+  </div>
+</div>
+</div>

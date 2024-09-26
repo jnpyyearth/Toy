@@ -1,26 +1,223 @@
-.container{
-    width: 900px;
-    margin-left: 20rem;
+ /* body {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
 }
-.card-header {
-    background-color:  #8800ff;
+
+.container {
+    width: 400px; 
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.register-box h1 {
+    text-align: center;
+    color: #4e0456;
+    margin-bottom: 1.5rem;
+}
+
+.input-box {
+    margin-bottom: 1.5rem;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.input-box .error {
+    color: #ff4d4d;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+button.btn {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #8800ff;
     color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.btn:hover {
+    background-color: #fb00ff;
+}
+
+@keyframes rise {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+} */
+
+
+
+
+
+
+/* .register-box {
+    background-color: #1a1a1d;
+    padding: 2rem;
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    animation: rise 0.8s ease;
+    box-shadow: 0px 2px 8px 8px rgb(255, 255, 255);
+  }
+  
+
+  @keyframes rise {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+  .input-box {
+    margin-bottom: 1rem;
+  }
+  
+  input[type="text"], input[type="password"], input[type="email"] {
+    width: 250px;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 2px solid #8800ff;
+    border-radius: 1rem;
+    background-color: #000;
+    color: #efebf3;
+    box-shadow: 0 2px 8px 4px #8800ff;
+  }
+  
+  
+  .error {
+    color: #ff3333;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  
+
+  button.btn {
+    width: 100%;
     padding: 1rem;
-    font-size: 1.25rem;
-    font-weight: bold;
-    border-bottom: 2px solid  #8800ff;
-    
-}
-.card-body {
-    border-radius: 0.5rem;
-    overflow: hidden;
-    width: 800px;
-}
-.btn-primary {
-    background-color:  #8800ff;
+    background-color: #8800ff;
+    color: #fff;
     border: none;
     border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.btn:hover {
+    background-color: #fb00ff;
+  } */
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
 }
-.btn-primary:hover {
-    background-color:  #8800ff;
+
+.container {
+    width: 800px; 
+    padding: 2rem;
+    /* background-color: #1a1a1d; */
+    background: linear-gradient(106deg, rgba(0,0,0,1) 0%, rgba(22,22,23,1) 59%, rgba(117,8,142,1) 100%);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-left: 20rem;
+    box-shadow: 0px 2px 8px 8px rgb(255, 255, 255);
 }
+
+.register-box h1 {
+    text-align: center;
+    color: #1df605;
+    margin-bottom: 1.5rem;
+    animation: bounce 0.6s infinite;
+}
+
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 48%; 
+}
+
+.input-box {
+    margin-bottom: 1.5rem;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 0.75rem;
+    /* border-radius: 5px; */
+    /* border: 1px solid #ccc; */
+    box-sizing: border-box;
+
+    border-radius: 20px;
+    box-shadow: 0px 2px 8px 4px #f70fef;
+    color: #efebf3;
+    background-color: black;
+    
+}
+
+.input-box .error {
+    color: #ff4d4d;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+button.btn {
+    width: 200px;
+    padding: 0.75rem;
+    background-color: #8800ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+button.btn:hover {
+    background-color: #fb00ff;
+}
+

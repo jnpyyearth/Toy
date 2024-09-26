@@ -5,13 +5,52 @@ body {
     padding: 0;
 }
 
+h1{
+    margin-left: 22rem;
+    color: chartreuse; 
+    margin-bottom: 10px;
+    margin-top: 10px;
+    animation: bounce 0.6s infinite;
+    
+}
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
 .container {
     margin-left: 250px; 
-    padding-top: 20px; 
+    /* padding: 20px;  */
+    animation: rise 0.6s ease;
+    box-shadow: 0px 2px 8px 8px rgb(255, 255, 255);
+    background: linear-gradient(106deg, rgba(0,0,0,1) 0%, rgba(22,22,23,1) 59%, rgba(117,8,142,1) 100%);
+    border-radius: 20px;
 }
+
+
+@keyframes rise {
+    0% {
+        transform: translateY(100%); 
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
 .card {
-    background-color: #030003; 
+    /* background-color: #030003;  */
+    background: linear-gradient(106deg, rgba(0,0,0,1) 0%, rgba(22,22,23,1) 59%, rgba(117,8,142,1) 100%);
     color: #fbfbfb; 
+    height: 750px;
+    margin-bottom: 2rem;
 }
 
 .card-header {
@@ -30,9 +69,16 @@ body {
 }
 .form-label {
     font-weight: bold;
+    margin-top: 1rem; 
+    margin-left: 2px;
 }
 .form-control {
     border-radius: 1rem;
+    box-shadow: 0px 2px 8px 4px #f70fef;
+    color: #efebf3;
+    background-color: black;
+   
+    
 }
 .btn-primary {
     background-color:  #8800ff;
@@ -40,10 +86,41 @@ body {
     border-radius: 0.5rem;
 }
 .btn-primary:hover {
-    background-color:  #8800ff;
+    background-color:  #fb00ff;
 }
 
 .container{
     margin-left: 15rem;
     width: 1000px;
+}
+
+.toy-button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.toy-button:hover {
+    background-color: #0069d9; 
+    transform: scale(1.05);    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.modal-content {
+    border-radius: 10px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.modal-header {
+    background-color: #007bff; 
+    color: white; 
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+}
+
+.modal-footer {
+    border-top: none; 
+}
+
+.modal-body {
+    font-size: 16px; 
+    text-align: center; 
 }

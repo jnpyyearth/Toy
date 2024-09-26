@@ -1,0 +1,130 @@
+.about-us {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #27021d;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 166, 255, 0.929);
+    margin-left: 20rem;
+    animation: rise-and-bounce 0.3s ease;
+  }
+
+  @keyframes rise-and-bounce {
+    0% {
+        transform: translateY(100%); 
+        opacity: 0; 
+    }
+    80% {
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+    90% {
+        transform: translateY(-10px); 
+    }
+    100% {
+        transform: translateY(0); 
+    }
+}
+  
+  .about-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .about-header h1 {
+    font-size: 36px;
+    color: #f2e9e9;
+  }
+  
+  .about-header p {
+    font-size: 18px;
+    color: #f4eded;
+  }
+  
+  .about-content section {
+    margin-bottom: 30px;
+  }
+  
+  .about-content h2 {
+    font-size: 28px;
+    color: #f7f9fa;
+    margin-bottom: 10px;
+  }
+  
+  .about-content p, .about-content ul {
+    font-size: 16px;
+    color: #f4ecec;
+  }
+  
+  .about-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .about-content li {
+    margin-bottom: 10px;
+  }
+  
+  .about-team {
+    text-align: center;
+  }
+  
+  .about-team p {
+    font-style: italic;
+  }
+  
+  .about-values {
+    margin: 40px 0;
+  }
+  
+  .value-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .value-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+  }
+  
+  .icon {
+    font-size: 40px;
+    color: #3498db;
+    margin-bottom: 15px;
+  }
+  
+  .value-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+  }
+  
+  .value-content p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .value-item:hover {
+    background-color: #f9f9f9;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+  }
+  
+  @media (max-width: 768px) {
+    .value-container {
+      flex-direction: column;
+    }
+  }
+
+  p{
+    font-size: 20px;
+  }
+
+  h2 {
+    text-align: center;
+  }

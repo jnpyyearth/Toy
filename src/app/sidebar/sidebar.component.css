@@ -14,6 +14,7 @@ body {
   padding-top: 20px;
   transition: left 0.3s; 
   box-shadow: 0 0 15px rgba(255, 166, 255, 0.929);
+  z-index: 2000;
 }
 
 .sidebar.open {
@@ -67,6 +68,7 @@ body {
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
   transition: left 0.3s; 
   font-size: 22px;
+  z-index: 2000;
 }
 
 .main-content button:hover {
@@ -98,3 +100,4 @@ footer .logo-img {
   margin-left: 2.5rem;
   margin-top: 6rem;
 }
+

@@ -14,11 +14,11 @@ p{
     color: black;
 }
 .navbar {
-    width: 1195px; 
+    width: 1455px; 
     position: relative;
     top: 0;
     margin-top : -1.5rem;
-    margin-left: 210px;
+    margin-left: -50px;
     z-index: 1000;
     background-color: rgb(11, 18, 2);
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
@@ -44,7 +44,7 @@ p{
 }
 
 .navbar-brand {
-  padding-left: 5px; 
+  padding-left: 2px; 
 }
 
 .dropdown ms-auto{
@@ -56,11 +56,12 @@ p{
 }
 
 .navbar .form-control {
-  border: 1px solid #3d093d; /* สีขอบของช่องค้นหา */
-  border-radius: 30px; /* มุมมน */
-  padding: 10px 15px; /* ระยะห่างภายใน */
-  transition: all 0.2s; /* เพิ่มการเปลี่ยนแปลง */
+  border: 1px solid #3d093d; 
+  border-radius: 30px; 
+  padding: 10px 15px; 
+  transition: all 0.2s; 
   height: 35px;
+  margin-left: -30px;
 }
 
 .navbar .form-control:focus {
@@ -70,22 +71,25 @@ p{
 }
 
 .navbar .btn {
-  border-radius: 20px; /* มุมมน */
-  transition: all 0.3s; /* เพิ่มการเปลี่ยนแปลง */
+  border-radius: 10px; 
+  transition: all 0.3s; 
   background-color:  #8800ff;
   color: aliceblue;
   cursor: pointer;
   margin-right: 1.5rem;
+  padding: 0.5rem 1rem;
 }
 
 .navbar .btn:hover{
 transform: scale(1.1);
 box-shadow: 0 0 15px 0 #8800ff ;
 }
+
 .logo-img {
-  width: 80px; 
+  width: 100px; 
   height: auto;
-  margin-left: 1rem;
+  margin-left: 20rem;
+  
 }
 
 .dropdown-menu {
@@ -98,3 +102,17 @@ box-shadow: 0 0 15px 0 #8800ff ;
   padding: 10px; 
 }
 
+.navbar-slide {
+  margin-left: 250px; 
+  transition: margin-left 0.3s ease; 
+}
+
+
+.container{
+  margin-left: 10rem;
+}
+
+input[type="search"],
+select{
+  margin-top: 5px;
+}

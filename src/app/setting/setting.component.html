@@ -1,12 +1,20 @@
+
+<app-navbar/>
+<app-sidebar/>
 <h2>Account setting</h2>
 <hr/>
 <div class="row">
-    <div class="col-4" mt-4>
+    <div class="col-4" mt-4 >
         <b>Edit Profile</b>
-        
     </div>
     <div class="col-8">
+      <button type="button" class="back" [routerLink]="'/home'">
+        <i class="bi bi-check-circle-fill">Back</i> 
+    </button>
+      <div class="form">
         <div class="mb-3">
+          
+         
             <label for="exampleFormControlInput1" class="form-label">First name</label>
             <input type="text" class="form-control" id="exampleFormControlInput1">
           </div>
@@ -30,12 +38,12 @@
             <label for="exampleFormControlInput5" class="form-label">Phone</label>
             <input type="number" class="form-control" id="exampleFormControlInput5" placeholder="089-xxx-xxxx">
           </div>
-          <button type="button" class="btn btn-primary mt-3" [routerLink]="'/home'">
-            <i class="bi bi-check-circle-fill"></i> Save
-        </button>
         <hr>
-    </div>
-  
+        <button type="button" class="save" [routerLink]="''">
+          <i class="bi bi-check-circle-fill">Save</i> 
+      </button>
+      </div>
+   </div>
 </div>
 
 <footer>

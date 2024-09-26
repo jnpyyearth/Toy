@@ -11,30 +11,30 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 90vh;
-    /*background-color: rgb(48, 3, 36);*/
+    min-height: 100vh;
+    background-color: rgb(29, 13, 42);
 }
 
 .loginbox {
-   
+
     width: 430px;
     height: 450px;
     background-color: rgb(33, 3, 14);
     color: rgb(255, 241, 243);
     border-radius: 60px;
     border: 5px solid greenyellow;
-    padding: 20px 30px; 
-    animation: borderBlink 1s infinite; 
-    
+    padding: 20px 30px;
+    animation: borderBlink 1s infinite;
+
 }
 
 
 @keyframes borderBlink {
     0%, 100% {
-        border-color: greenyellow; 
+        border-color: greenyellow;
     }
     50% {
-        border-color: transparent; 
+        border-color: transparent;
     }
     75% {
         border-color: aliceblue;
@@ -89,7 +89,7 @@ body {
 .remember-forgot label input{
     accent-color: rgb(118, 239, 12);
     margin-right: 3px;
-    
+
 }
 
 .remember-forgot a{
@@ -130,16 +130,23 @@ body {
 }
 
 .btn {
-    background-color: #be3ec2; 
-    color: white; 
+    background-color: #be3ec2;
+    color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.3s ease;
 }
 
 .btn:hover {
     background-color: #e4960f;
-    color: rgb(211, 209, 179); 
+    color: rgb(211, 209, 179);
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
 }

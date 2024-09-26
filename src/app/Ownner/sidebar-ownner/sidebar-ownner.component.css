@@ -13,10 +13,12 @@ body {
   background: linear-gradient(10deg, rgba(0,0,0,1) 0%, rgba(74,28,138,1) 21%, rgba(168,53,171,1) 49%, rgba(138,28,87,1) 77%, rgba(0,0,0,1) 100%);
   transition: left 0.3s; 
   box-shadow: 0 0 15px rgba(255, 166, 255, 0.929);
+  z-index: 2000;
 }
 
 .sidebar.open {
   left: 0px; 
+  z-index: 2000;
 }
 
 .sidebar h2 {
@@ -68,6 +70,7 @@ body {
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
   transition: left 0.3s; 
   font-size: 22px;
+  z-index: 2000;
 }
 
 .main-content button:hover {
@@ -98,5 +101,5 @@ footer .logo-img {
   width: 155px; 
   height: auto;
   margin-left: 2.5rem;
-  margin-top: 6rem;
+  margin-top: 4rem;
 }

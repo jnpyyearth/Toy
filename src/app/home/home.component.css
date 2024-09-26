@@ -1,26 +1,55 @@
+.container{
+    animation: rise 0.8s ease;
+}
+
+@keyframes rise {
+    0% {
+        transform: translateY(100%); 
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 h2{
     color: rgb(224, 206, 121);
     justify-content: space-between;
     text-align: center;
     padding: 0;
-
+    margin-left: 13rem;
+    animation: bounce 0.8s infinite;
 }
 
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .cart-blank h2 {
+    animation: bounce 0.8s infinite;
+  }
+
 h5{
-    color: black;
+    color: rgb(232, 232, 1);
 }
 
 p{
-    color: black;
+    color: rgb(191, 233, 5);
 }
 
 .carousel {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 10rem;
-    margin-left: 5rem;
-    width: 1200px;
+    margin-top: 2rem;
+    margin-left: 8rem;
+    width: 1250px;
     height: 400px;
   }
 
@@ -36,15 +65,15 @@ p{
 }*/
 
 .carousel-indicators{
-    margin-top: -15rem;
-    margin-bottom: -9rem;
+    margin-top: -10rem;
+    margin-bottom: -3rem;
     width: 150px;
-    margin-left: 520px;
+    margin-left: 545px;
 }
 
 .carousel-item img {
-    height: auto;
-    max-width: 100%;
+    height: 400px;
+    max-width: 1200px;
     object-fit: cover;
   }
   

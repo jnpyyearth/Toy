@@ -1,0 +1,114 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.map-container {
+    max-width: 1200px; 
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20rem;
+    border-radius: 8px; 
+    overflow: hidden; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    animation: rise-and-bounce 0.3s ease;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #0d0101;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-left: 20rem;
+    margin-top: 2rem;
+    /*animation: rise-up 0.5s ease;*/
+    animation: rise-and-bounce 0.8s ease;
+}
+
+
+@keyframes rise-and-bounce {
+    0% {
+        transform: translateY(100%); 
+        opacity: 0; 
+    }
+    80% {
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+    90% {
+        transform: translateY(-10px); 
+    }
+    100% {
+        transform: translateY(0); 
+    }
+}
+
+.social-item {
+    text-align: center;
+}
+
+button {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button i {
+    margin-right: 10px;
+    font-size: 1.5em;
+}
+
+#fb button {
+    background-color: #4267B2; 
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+#fb button:hover {
+    background-color: #365899;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 0 #ff9900 ;
+}
+
+#ig button {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    transition: all 0.3s;
+    cursor: pointer;
+  
+}
+
+#ig button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 0 #ff9900 ;
+    background: linear-gradient(45deg, #f4942d 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+#web button {
+    background-color: #db4437; 
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+#web button:hover {
+    background-color: #c33c30;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 0 #ff9900 ;
+}
+
+#tel button {
+    background-color: #049b36; 
+}
+

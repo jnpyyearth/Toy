@@ -33,6 +33,16 @@ h3{
     color: #c72727; 
 }
 
+.card-title {
+    transition: all 0.3s;
+    cursor: pointer;
+    color: #231f1f;
+}
+
+.card-title:hover { 
+    color: blueviolet;
+}
+
 .btn-primary {
     background-color: #8800ff; 
     border-color: #670b73; 
