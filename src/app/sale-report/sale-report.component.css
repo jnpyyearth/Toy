@@ -1,0 +1,142 @@
+/*
+
+
+.order-container {
+  margin-bottom: 40px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  background-color: #fafafa;
+}
+
+
+.combined-order-info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.combined-order-info-table th, .combined-order-info-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.combined-order-info-table th {
+  background-color: #e6f7ff;
+  color: #333;
+}
+
+.combined-order-info-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+
+@media (max-width: 768px) {
+  .combined-order-info-table {
+    font-size: 14px;
+  }
+
+  .combined-order-info-table th, .combined-order-info-table td {
+    padding: 8px;
+  }
+} */
+
+h2{
+  color: chartreuse;
+  justify-content: center;
+  text-align: center;
+  animation: bounce 0.8s infinite;
+}
+
+h3{
+  color: cyan;
+   justify-content: center;
+  text-align: center;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+label{
+  color: #e6f7ff;
+}
+
+.container-bg{
+  background: linear-gradient(106deg, rgba(0,0,0,1) 0%, rgba(22,22,23,1) 59%, rgba(117,8,142,1) 100%);
+  box-shadow: 0px 2px 8px 8px rgb(255, 255, 255);
+  padding: 20px;
+}
+
+.filter-container {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 450px;
+  }
+  
+  .filter-container label {
+    margin-right: 10px;
+  }
+  
+  .filter-container select {
+    margin-right: 20px;
+    padding: 5px;
+  }
+  
+  .combined-order-info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .combined-order-info-table th, .combined-order-info-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+    background-color: #ddd;
+  }
+  
+  .combined-order-info-table th {
+    background-color: #e6f7ff;
+    color: #333;
+  }
+  
+  .combined-order-info-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  button{
+    margin-left: -2rem;
+  }
+
+   table th {
+    background-color: rgb(8, 1, 15);
+    font-weight: bold;
+    font-size: 15px;
+    width: auto;
+    color: aliceblue;
+  }
+
+  
+  table td {
+    vertical-align: middle;
+    background-color: #f4f4f4;
+    color: rgb(0, 0, 0);
+  }
+
+    
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    color: #f4f4f4;
+    animation: rise 0.6s ease;
+    
+    
+  }

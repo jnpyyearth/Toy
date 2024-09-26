@@ -1,0 +1,45 @@
+
+footer {
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(74,28,138,1) 15%, rgba(203,33,224,1) 41%, rgba(55,15,93,1) 59%, rgba(49,11,78,1) 80%, rgba(0,0,0,1) 100%);
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: positive;
+    bottom: 0;
+    width: 1500px;
+    height: 240px;
+    margin-top: 18rem;
+    margin-left: -12rem;
+    color: aliceblue;
+}
+
+.logo-img {
+    max-width: 150px;
+    margin-left: 70rem; 
+}
+
+.footer-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.ourteam {
+    margin-right: 20px;
+    
+}
+
+footer ul{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.team-container {
+    display: flex; 
+    gap: 20px; 
+}
+
+.nameteam ul {
+    list-style: none; 
+    padding: 0;
+}

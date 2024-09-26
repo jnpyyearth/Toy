@@ -1,0 +1,54 @@
+<div class="restock-container">
+    <h2>Restock Product</h2>
+    <form [formGroup]="restockForm" (ngSubmit)="onSubmit()">
+      <div>
+        <label for="productId">Product:</label>
+        <select id="productId" formControlName="productId">
+          <option *ngFor="let product of products" [value]="product.Product_ID">
+            {{ product.Product_ID }} - {{ product.Product_Name }} (Category: {{ product.Category_ID }})
+          </option>
+        </select>
+        <div *ngIf="restockForm.get('productId').invalid && restockForm.get('productId').touched">
+          Product ID is required.
+        </div>
+      </div>
+  
+      <div>
+        <label for="categoryId">Category ID:</label>
+        <input id="categoryId" formControlName="categoryId" type="number">
+        <div *ngIf="restockForm.get('categoryId').invalid && restockForm.get('categoryId').touched">
+          Category ID is required.
+        </div>
+      </div>
+  
+      <div>
+        <label for="supplierName">Supplier Name:</label>
+        <select id="supplierName" formControlName="supplierName">
+          <option *ngFor="let supplier of suppliers" [value]="supplier.Supplier_Name">
+            {{ supplier.Supplier_Name }}
+          </option>
+        </select>
+        <div *ngIf="restockForm.get('supplierName').invalid && restockForm.get('supplierName').touched">
+          Supplier Name is required.
+        </div>
+      </div>
+  
+      <div>
+        <label for="quantity">Quantity:</label>
+        <input id="quantity" formControlName="quantity" type="number" min="1">
+        <div *ngIf="restockForm.get('quantity').invalid && restockForm.get('quantity').touched">
+          Quantity must be at least 1.
+        </div>
+      </div>
+  
+      <div>
+        <label for="restockTotalPrice">Restock Total Price:</label>
+        <input id="restockTotalPrice" formControlName="restockTotalPrice" type="number" min="0">
+        <div *ngIf="restockForm.get('restockTotalPrice').invalid && restockForm.get('restockTotalPrice').touched">
+          Restock Total Price must be at least 0.
+        </div>
+      </div>
+  
+      <button type="submit" [disabled]="restockForm.invalid">Restock</button>
+    </form>
+  </div>

@@ -1,0 +1,61 @@
+<!--
+
+<div *ngIf="product">
+  <div class="card">
+    <img [src]="product.image" class="card-img-top" alt="{{ product.name }}" />
+    <div class="card-body">
+      <h1 class="card-title">{{ product.name }}</h1>
+      <p class="card-text">{{ product.description }}</p>
+      <p class="card-text"><strong>Price:</strong> {{ product.price }} ฿</p>
+
+      <div class="form-group">
+        <label for="quantity">Quantity:</label>
+        <input
+          type="number"
+          [(ngModel)]="product.quantity"
+          min="1"
+          class="form-control"
+          id="quantity"
+        />
+      </div>
+
+      <button class="btn btn-primary" (click)="addToCart(product)">
+        เพิ่มในตะกร้า
+      </button>
+    </div>
+  </div>
+</div>
+
+<a class="btn btn-secondary mt-3" routerLink="/cart">Go to Cart</a> -->
+
+
+<div *ngIf="product" class="product-container">
+  <div class="card">
+<!-- img resize ด้วย -->
+    <img [src]="product.image" class="card-img-top" alt="{{ product.name }}" />
+
+    <div class="card-body">
+      <h1 class="card-title">{{ product.name }}</h1>
+      <p class="card-text">{{ product.description }}</p>
+      <p class="card-text"><strong>Price:</strong> {{ product.price }} ฿</p>
+
+      <div class="form-group">
+        <label for="quantity">Quantity:</label>
+        <input
+          type="number"
+          [(ngModel)]="product.quantity"
+          min="1"
+          class="form-control"
+          id="quantity"
+        />
+      </div>
+
+      <button class="btn btn-primary" (click)="addToCart(product)">
+        เพิ่มในตะกร้า
+      </button>
+    </div>
+  </div>
+   
+</div>
+
+<a class="btn btn-secondary mt-3" routerLink="/cart">Go to Cart</a>

@@ -1,0 +1,74 @@
+<app-navbar/>
+<app-sidebar-ownner/>
+
+
+
+<div class="restock-report">
+    <h1>Supplier Report</h1>
+  
+    <div class="filter-section">
+      <label for="month">Select Month:</label>
+      <select [(ngModel)]="selectedMonth" id="month">
+        <option [value]="null">Every Month</option> <!-- Add this option -->
+        <option *ngFor="let month of months" [value]="month.value">{{ month.name }}</option>
+      </select>
+  
+      <label for="year">Select Year:</label>
+      <input [(ngModel)]="selectedYear" type="number" id="year" min="2000" max="2100"/>
+  
+      <button (click)="getRestockReport()">Filter</button>
+    </div>
+    <!-- <div>
+      <button (click)="filterEveryMonth()">Every Month</button>
+    </div> -->
+  <hr>
+    <div *ngIf="restockReport">
+      <h2>Most Restocked Supplier</h2>
+      <p>
+        <strong>Supplier Name:</strong>{{ restockReport.mostBuy.Supplier_Name }}<br />
+        <strong>Total Restocked Quantity:</strong>{{ restockReport.mostBuy.Total_Restock }}<br />
+        <strong>Total Restock Price:</strong>{{ restockReport.mostBuy.Total_Price | currency }}
+      </p>
+  
+      <hr>
+
+      <h2>Least Restocked Supplier</h2>
+      <p>
+        <strong>Supplier Name:</strong> {{ restockReport.leastBuy.Supplier_Name }}<br />
+        <strong>Total Restocked Quantity:</strong> {{ restockReport.leastBuy.Total_Restock }}<br />
+        <strong>Total Restock Price:</strong> {{ restockReport.leastBuy.Total_Price | currency }}
+      </p>
+      
+      <hr>
+  
+      <h2>All Supplier Report Information</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Product ID</th>
+            <th>Category ID</th>
+            <th>Supplier Name</th>
+            <th>Quantity</th>
+            <th>Total Price</th>
+            <th>Restock Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let restock of restockReport.allRestocks">
+            <td>{{ restock.Product_ID }}</td>
+            <td>{{ restock.Category_ID }}</td>
+            <td>{{ restock.Supplier_Name }}</td>
+            <td>{{ restock.Quantity }}</td>
+            <td>{{ restock.Restock_Total_Price | currency }}</td>
+            <td>{{ restock.Restock_Date | date }}</td>
+          </tr>
+        </tbody>
+      </table>
+  
+      <h3>Total Restock Price for All Restocks: {{ getTotalRestockPrice() | currency }}</h3>
+    </div>
+  
+    <div *ngIf="!restockReport">
+      <p>Loading report...</p>
+    </div>
+  </div>

@@ -1,0 +1,82 @@
+
+<app-navbar/>
+<app-sidebar-ownner></app-sidebar-ownner>
+
+
+<div class="supplier-form">
+    <h2>{{ isEditMode ? 'Edit Supplier' : 'Add Supplier' }}</h2>
+  
+    <form (ngSubmit)="onSubmit()" #supplierForm="ngForm">
+      <div class="form-group">
+        <label for="Supplier_Name">Supplier Name</label>
+        <input type="text" id="Supplier_Name" required [(ngModel)]="supplier.Supplier_Name" name="Supplier_Name" #name="ngModel">
+        <div *ngIf="name.invalid && name.touched" class="error">Supplier Name is required</div>
+      </div>
+  
+      <div class="form-group">
+        <label for="Supplier_Address">Supplier Address</label>
+        <input type="text" id="Supplier_Address" required [(ngModel)]="supplier.Supplier_Address" name="Supplier_Address" #address="ngModel">
+        <div *ngIf="address.invalid && address.touched" class="error">Address is required</div>
+      </div>
+  
+      <div class="form-group">
+        <label for="Email">Email</label>
+        <input type="email" id="Email" required [(ngModel)]="supplier.Email" name="Email" #email="ngModel">
+        <div *ngIf="email.invalid && email.touched" class="error">Valid Email is required</div>
+      </div>
+  
+      <div class="form-group">
+        <label for="Phone">Phone</label>
+        <input type="text" id="Phone" required [(ngModel)]="supplier.Phone" name="Phone" #phone="ngModel" maxlength="10">
+        <div *ngIf="phone.invalid && phone.touched" class="error">Phone number must be 10 digits</div>
+      </div>
+  
+      <button type="submit" class="btn" [disabled]="supplierForm.invalid">{{ isEditMode ? 'Update' : 'Add' }} Supplier</button>
+    </form>
+  </div>
+
+
+
+  <div class="container">
+    <h2>Supplier List</h2>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Supplier Name</th>
+          <th>Supplier Address</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let supplier of suppliers">
+          <td *ngIf="!supplier.editing">{{ supplier.Supplier_Name }}</td>
+          <td *ngIf="supplier.editing">
+            <input [(ngModel)]="supplier.Supplier_Name" placeholder="Supplier Name">
+          </td>
+  
+          <td *ngIf="!supplier.editing">{{ supplier.Supplier_Address }}</td>
+          <td *ngIf="supplier.editing">
+            <input [(ngModel)]="supplier.Supplier_Address" placeholder="Supplier Address">
+          </td>
+  
+          <td *ngIf="!supplier.editing">{{ supplier.Email }}</td>
+          <td *ngIf="supplier.editing">
+            <input [(ngModel)]="supplier.Email" placeholder="Email">
+          </td>
+  
+          <td *ngIf="!supplier.editing">{{ supplier.Phone }}</td>
+          <td *ngIf="supplier.editing">
+            <input [(ngModel)]="supplier.Phone" placeholder="Phone">
+          </td>
+  
+          <td>
+            <button *ngIf="!supplier.editing" (click)="editSupplier(supplier)">Edit</button>
+            <button *ngIf="supplier.editing" (click)="saveSupplier(supplier)">Save</button>
+            <button *ngIf="supplier.editing" (click)="cancelEdit(supplier)">Cancel</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

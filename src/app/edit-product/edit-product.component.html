@@ -1,0 +1,109 @@
+
+
+
+<app-navbar/>
+<app-sidebar-ownner/>
+<div *ngIf="products && products.length; else noData">
+  <h2>Product List</h2>
+
+  <input
+    type="text"
+    placeholder="Search by Product Name or Category"
+    [(ngModel)]="searchQuery"
+    class="form-control"
+  />
+
+  <table>
+    <thead>
+      <tr>
+        <th>Product no.</th>
+        <th>Category</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <!-- <th>Supplier no.</th>
+        <th>MinimumValue</th> -->
+        <th>Quantity</th>
+        <th>image</th>
+        <th>Edit</th>
+        <th>Deleted</th>
+        <th>Restock</th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr *ngFor="let product of filteredProducts()">
+        <td>{{ product.Product_ID }}</td>
+        <td>
+          <select
+            [(ngModel)]="product.Category_ID"
+            class="form-control"
+            *ngIf="isEditing(product.Product_ID)"
+          >
+            <option
+              *ngFor="let category of gameCategories"
+              [value]="category.id"
+            >
+              {{ category.name }}
+            </option>
+          </select>
+          <span *ngIf="!isEditing(product.Product_ID)">
+            {{ getCategoryName(product.Category_ID) }}
+          </span>
+        </td>
+        <td>
+          <input
+            *ngIf="isEditing(product.Product_ID)"
+            [(ngModel)]="product.Product_Name"
+            class="form-control"
+          />
+          <span *ngIf="!isEditing(product.Product_ID)">
+            {{ product.Product_Name }}
+          </span>
+        </td>
+        <td>{{ product.Description }}</td>
+        <td>{{ product.Product_Price | currency }}</td>
+        <!-- <td>{{ product.Supplier_ID }}</td>
+        <td>{{ product.Minimum_Value }}</td> -->
+        <td>{{ product.Quantity }}</td>
+        <td><img [src]="product?.imgUrl" alt="{{ product?.Product_Name }}" width="50"/></td>
+        <td>
+          <button class="btn btn-primary" *ngIf="!isEditing(product.Product_ID)" (click)="editProduct(product.Product_ID)" [routerLink]="['/edit-product', product.Product_ID]">
+            Edit
+          </button>
+        </td>
+        <td>
+          <button class="btn btn-danger" *ngIf="!isEditing(product.Product_ID)" (click)="deleteProduct(product.Product_ID)">
+            Deleted
+          </button>
+        </td>
+        <td>
+
+          <button class="btn btn-success" (click)="restockProduct(product.Product_ID)">
+            Restock
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<ng-template #noData>
+  <p>No products available.</p>
+</ng-template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

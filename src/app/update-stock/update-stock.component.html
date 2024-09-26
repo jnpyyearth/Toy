@@ -1,0 +1,98 @@
+<!-- <form [formGroup]="updateForm" (ngSubmit)="onSubmit()">
+    <h2>Update Product and Stock Details</h2>
+  
+  
+    <fieldset>
+      <legend>Product Details</legend>
+      <label>
+        Product Name:
+        <input formControlName="Product_Name" type="text" />
+      </label>
+      <label>
+        Category ID:
+        <input formControlName="Category_ID" type="number" />
+      </label>
+      <label>
+        Price:
+        <input formControlName="Product_Price" type="number" step="0.01" />
+      </label>
+      <label>
+        Description:
+        <textarea formControlName="Description"></textarea>
+      </label>
+      <label>
+        Image URL:
+        <input formControlName="imgUrl" type="text" />
+      </label>
+
+    </fieldset>   -->
+  
+    <!-- Stock Details -->
+    <!-- <fieldset>
+      <legend>Stock Details</legend>
+      <label>
+        Supplier ID:
+        <input formControlName="Supplier_ID" type="number" />
+      </label>
+      <label>
+        Minimum Value:
+        <input formControlName="Minimum_Value" type="number" />
+      </label>
+      <label>
+        Quantity:
+        <input formControlName="Quantity" type="number" />
+      </label>
+    </fieldset>
+  
+    <button type="submit" [disabled]="updateForm.invalid">Update</button>
+  </form> -->
+  
+
+
+  <form [formGroup]="updateForm" (ngSubmit)="onSubmit()">
+    <h2>Update Product and Stock Details</h2>
+  
+  
+    <fieldset>
+      <legend>Product Details</legend>
+      <label>
+        Product Name:
+        <input formControlName="Product_Name" type="text" />
+      </label>
+      <label>
+        Category ID:
+        <input formControlName="Category_ID" type="number" />
+      </label>
+      <label>
+        Price:
+        <input formControlName="Product_Price" type="number" step="0.01" />
+      </label>
+      <label>
+        Description:
+        <textarea formControlName="Description"></textarea>
+      </label>
+      <label>
+        Image URL:
+        <input formControlName="imgUrl" type="text" />
+      </label>
+    </fieldset>
+  
+    <!-- Stock Details -->
+    <fieldset>
+      <legend>Stock Details</legend>
+      <label>
+        Supplier ID:
+        <input formControlName="Supplier_ID" type="number" />
+      </label>
+      <label>
+        Minimum Value:
+        <input formControlName="Minimum_Value" type="number" />
+      </label>
+      <label>
+        Quantity:
+        <input formControlName="Quantity" type="number" />
+      </label>
+    </fieldset>
+  
+    <button type="submit" [disabled]="updateForm.invalid">Update</button>
+  </form>

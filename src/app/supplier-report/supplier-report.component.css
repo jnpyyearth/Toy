@@ -1,0 +1,97 @@
+.restock-report{
+    max-width: 800px;
+    margin: 20px auto;
+    background: linear-gradient(106deg, rgba(0,0,0,1) 0%, rgba(22,22,23,1) 59%, rgba(117,8,142,1) 100%);
+    box-shadow: 0px 2px 8px 8px rgb(255, 255, 255);
+    padding: 30px;
+    animation: rise 0.6s ease;
+    margin-left: 350px;
+    border-radius: 20px;
+}
+
+@keyframes rise {
+    0% {
+        transform: translateY(100%); 
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h1{
+    color: chartreuse;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    animation: bounce 0.8s infinite;
+  }
+
+      
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+
+  .filter-section{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    margin-left: 8rem;
+    gap: 10px;
+  }
+
+
+
+  label{
+    color: rgb(197, 3, 240);
+  }
+
+  h2{
+    color: rgb(194, 10, 210);
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  h3{
+    color: aliceblue;
+  }
+
+  p{
+    color: #f4f4f4;
+    justify-content: space-between;
+    display: flex;
+  }
+
+  table th {
+    background-color: rgb(8, 1, 15);
+    font-weight: bold;
+    font-size: 15px;
+    width: auto;
+    color: aliceblue;
+  }
+
+  
+  table td {
+    vertical-align: middle;
+    /* background-color: rgb(130, 64, 191); */
+    background-color: #f4f4f4;
+    color: rgb(0, 0, 0);
+  }
+
+    
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    color: #f4f4f4;
+    animation: rise 0.6s ease;
+    
+  }

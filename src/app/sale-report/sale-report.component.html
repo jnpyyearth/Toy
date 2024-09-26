@@ -1,0 +1,108 @@
+<app-navbar />
+<app-sidebar-ownner></app-sidebar-ownner>
+<div class="container-bg">
+    <h2>Sales Report</h2>
+
+
+
+
+    <!-- Month and Year Filter -->
+    <div class="filter-container">
+        <div>
+            <button (click)="filterAllInfo()">All Info</button>
+        </div>
+
+        <label for="month">Select Month:</label>
+        <select id="month" [(ngModel)]="selectedMonth" (change)="filterByMonth()">
+            <option *ngFor="let month of months" [value]="month.value">{{ month.label }}</option>
+        </select>
+
+        <label for="year">Select Year:</label>
+        <select id="year" [(ngModel)]="selectedYear" (change)="filterByMonth()">
+            <option *ngFor="let year of years" [value]="year">{{ year }}</option>
+        </select>
+    </div>
+
+    <!-- Display Total Sales for the selected period -->
+    <div *ngIf="filteredOrders.length > 0">
+        <h3>Total Sales for {{ selectedMonth ? selectedMonthLabel : 'Every Month' }} {{ selectedYear }}: {{ totalSales |
+            currency }}</h3>
+
+        <table class="combined-order-info-table">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Order Date</th>
+                    <th>Customer Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th>Product Price</th>
+                    <th>Total Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let detail of filteredOrders">
+                    <td>{{ detail.Order_ID }}</td>
+                    <td>{{ detail.Order_Date | date }}</td>
+                    <td>{{ detail.Firstname }} {{ detail.Lastname }}</td>
+                    <td>{{ detail.Email }}</td>
+                    <td>{{ detail.Phone }}</td>
+                    <td>{{ detail.Product_Name }}</td>
+                    <td>{{ detail.Quantity }}</td>
+                    <td>{{ detail.Product_Price | currency }}</td>
+                    <td>{{ detail.Total_Price | currency }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <div *ngIf="bestSales.length > 0">
+        <h2>Most Sold Product</h2>
+        <table class="best-sale-table">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Total Quantity Sold</th>
+                    <th>Total Sales</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let sale of bestSales">
+                    <td>{{ sale.Product_Name }}</td>
+                    <td>{{ sale.Total_Quantity }}</td>
+                    <td>{{ sale.Total_Sales | currency }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div *ngIf="leastSales.length > 0">
+        <h2>Least Sold Product</h2>
+        <table class="least-sale-table">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Total Quantity Sold</th>
+                    <th>Total Sales</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let sale of leastSales">
+                    <td>{{ sale.Product_Name }}</td>
+                    <td>{{ sale.Total_Quantity }}</td>
+                    <td>{{ sale.Total_Sales | currency }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div *ngIf="error" class="error">
+        {{ error }}
+    </div>
+    <div *ngIf="bestSaleError" class="error">
+        {{ bestSaleError }}
+    </div>
+</div>
