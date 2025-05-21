@@ -91,7 +91,7 @@ export class CardgameComponent implements OnInit {
           price: game.Product_Price,
           description: game.Description,
           image: game.imgUrl,
-          quantity: null, // Add a quantity field to each game object
+          quantity: null, 
         }));
       },
       (error) => {

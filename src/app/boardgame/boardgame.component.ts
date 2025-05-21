@@ -89,6 +89,7 @@ export class BoardgameComponent implements OnInit {
   }
 
   addToCart(game: any): void {
+    Swal.fire("Add to cart success!!!");
     const quantity = game.quantity || 1; // Use selected quantity or default to 1
     this.cartService.addToCart(game, quantity); // Pass quantity to the CartService
     console.log('Added to cart:', game); // Logs added game details

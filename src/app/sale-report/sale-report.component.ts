@@ -196,7 +196,7 @@ export class SaleReportComponent {
     { label: 'December', value: '12' }
   ];
 
-  years: string[] = ['2022', '2023', '2024'];  // Example years for selection
+  years: string[] = ['2022', '2023', '2024','2025'];  // Example years for selection
 
   constructor(private http: HttpClient) {}
 
